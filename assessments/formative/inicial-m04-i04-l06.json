@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "inicial-m04-i04-l06",
+  "mode": "formative",
+  "items": [
+    {
+      "id": "q-01",
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q-02",
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q-03",
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q-04",
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q-05",
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q-06",
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q-07",
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q-08",
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q-09",
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q-10",
+      "correctOptionIds": [
+        "A"
+      ]
+    }
+  ]
+}

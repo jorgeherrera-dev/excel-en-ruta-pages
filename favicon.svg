@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Excel en ruta">
+  <rect width="64" height="64" rx="14" fill="#107c41"/>
+  <path fill="#fff" d="M16 14h22v7h10v29H16zm22 10v5h6v-5zm0 9v5h6v-5zm0 9v4h6v-4z" opacity=".28"/>
+  <path fill="#fff" d="m20 22 7 10-7 10h7l4-6 4 6h7l-7-10 7-10h-7l-4 6-4-6z"/>
+</svg>
