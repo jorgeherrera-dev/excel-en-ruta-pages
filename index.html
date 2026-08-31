@@ -1217,8 +1217,8 @@
       .hero-card { transform: none !important; }
     }
   </style>
-  <script type="module" crossorigin src="./assets/index-Cpzoa_JG.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BKGgujJ4.css">
+  <script type="module" crossorigin src="./assets/index-CgG6yR43.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CWwddSwz.css">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -1230,6 +1230,7 @@
       </a>
       <nav class="main-nav" aria-label="Navegación principal">
         <a href="#temario">Ruta completa</a>
+        <a href="#recursos">Recursos rápidos</a>
       </nav>
       <div class="top-actions">
         <div class="top-progress" role="progressbar" aria-label="Progreso del curso legacy" aria-valuemin="0" aria-valuemax="24" aria-valuenow="0" id="topProgress" hidden aria-hidden="true"><span id="topProgressText">0/24</span><span class="mini-progress" aria-hidden="true"><i id="topProgressFill"></i></span></div>
@@ -1243,7 +1244,7 @@
       <div class="page-width hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Excel en ruta · <span data-catalog-count="levels">—</span> niveles · <span data-catalog-count="modules">—</span> módulos</p>
-          <h1>Aprende Excel sin sentir que lees un <em>manual infinito.</em></h1>
+          <h1>Excel Paso a Paso: <em>Tu Ruta Dinámica de Aprendizaje</em></h1>
           <p>Mira lo esencial, practica de inmediato y abre cada explicación solo cuando la necesites.</p>
           <div class="hero-chips" aria-label="Características del curso">
             <span><span data-catalog-count="lessons">—</span> lecciones organizadas</span>
@@ -1257,10 +1258,10 @@
             <p>La ruta avanza por nivel, módulo y lección, desde fundamentos y fórmulas hasta análisis, automatización y colaboración. Cada lección reúne explicación, ejemplo y práctica en una vista enfocada.</p>
           </details>
           <div class="search-shell">
-            <label class="sr-only" for="globalSearch">Buscar una lección por código, título, función o concepto</label>
+            <label class="sr-only" for="globalSearch">Buscar lecciones y recursos rápidos</label>
             <div class="search-field">
               <span class="search-glyph" aria-hidden="true">⌕</span>
-              <input class="global-search" id="globalSearch" type="search" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="searchResults" placeholder="Busca una lección: SUMAR.SI, referencias absolutas, SI…">
+              <input class="global-search" id="globalSearch" type="search" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="searchResults" placeholder="Busca lecciones o recursos: BUSCARX, Ctrl, formato…">
               <span class="search-kbd" aria-hidden="true">⌘ / Ctrl K</span>
             </div>
             <div class="search-results" id="searchResults" role="listbox" aria-label="Resultados de búsqueda"></div>
@@ -1309,6 +1310,10 @@
       </div>
     </section>
 
+    <section class="section" id="recursos">
+      <div class="page-width" id="resourceApp"></div>
+    </section>
+
     <section class="section" id="temario">
       <div class="page-width">
         <div id="studentCatalog"></div>
@@ -1350,83 +1355,6 @@
             <div class="reference-more"><button class="secondary-button" id="referenceMore" type="button">Mostrar más referencias</button></div>
           </div>
           <aside class="reference-detail" id="referenceDetail" aria-label="Detalle de referencia" tabindex="-1"></aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="hacks" hidden aria-hidden="true">
-      <div class="page-width">
-        <div class="section-head">
-          <p class="eyebrow">Hacks y traducción</p>
-          <h2>Trabaja más rápido. Entiende cualquier fórmula.</h2>
-          <p>Consulta atajos, trucos breves y equivalencias de funciones sin llenar la pantalla de texto.</p>
-          <details class="section-more">
-            <summary>Qué encontrarás en esta sección</summary>
-            <p>Los atajos distinguen Windows y macOS; el traductor reúne las funciones integradas que aparecen en el índice oficial de Excel y permite buscar en ambos idiomas. Los detalles se abren solo cuando los necesitas.</p>
-          </details>
-        </div>
-
-        <div class="hacks-shell" id="hacksShell">
-          <div class="hacks-tabs" id="hacksTabs" role="tablist" aria-label="Herramientas rápidas de Excel">
-            <button class="hacks-tab is-active" id="hackTabShortcuts" type="button" role="tab" aria-selected="true" aria-controls="hackShortcuts" tabindex="0" data-hack-tab="shortcuts"><i aria-hidden="true">⌘</i><span>Atajos y trucos</span></button>
-            <button class="hacks-tab" id="hackTabFunctions" type="button" role="tab" aria-selected="false" aria-controls="hackFunctions" tabindex="-1" data-hack-tab="functions"><i aria-hidden="true">fx</i><span>Funciones ES ↔ EN</span></button>
-          </div>
-
-          <div class="hacks-panel is-active" id="hackShortcuts" role="tabpanel" aria-labelledby="hackTabShortcuts" data-hack-panel="shortcuts">
-            <div class="hack-panel-inner">
-              <article class="daily-hack" id="dailyHack" aria-live="polite"></article>
-
-              <div class="hack-toolbar">
-                <label class="compact-field"><span class="sr-only">Buscar atajo o truco</span><input id="shortcutSearch" type="search" autocomplete="off" placeholder="Busca: pegar valores, filtro, F4…"></label>
-                <label class="control-field"><span>Categoría</span><select id="shortcutCategory" aria-label="Categoría de hacks"></select></label>
-                <div class="platform-switch" id="shortcutPlatform" aria-label="Sistema operativo">
-                  <button class="platform-button is-active" type="button" data-platform="windows" aria-pressed="true">Windows</button>
-                  <button class="platform-button" type="button" data-platform="mac" aria-pressed="false">macOS</button>
-                </div>
-              </div>
-
-              <div class="hack-meta">
-                <span class="hack-status" id="shortcutStatus" aria-live="polite"></span>
-                <div class="hack-actions">
-                  <button class="secondary-button" id="randomHack" type="button">Sorpréndeme</button>
-                  <button class="secondary-button" id="moreHacks" type="button">Ver 8 más</button>
-                </div>
-              </div>
-              <div class="hack-grid" id="hackGrid"></div>
-              <aside class="hack-detail" id="hackDetail" aria-label="Detalle del hack" tabindex="-1"></aside>
-              <p class="function-note"><strong>Nota de teclado:</strong> además del sistema operativo, algunos atajos con letras cambian según el idioma o la versión web/escritorio de Excel; las fichas sensibles muestran ambas variantes. Las teclas de función y símbolos como <code>;</code>, <code>:</code> o <code>`</code> también pueden variar en portátiles y teclados latinoamericanos. En algunos equipos necesitas mantener <kbd>Fn</kbd> o ajustar los atajos del sistema.</p>
-              <div class="source-links"><a href="https://support.microsoft.com/es-es/accessibility/excel/keyboard-shortcuts-in-excel" target="_blank" rel="noreferrer">Guía oficial de atajos de Excel ↗</a></div>
-            </div>
-          </div>
-
-          <div class="hacks-panel" id="hackFunctions" role="tabpanel" aria-labelledby="hackTabFunctions" data-hack-panel="functions" hidden>
-            <div class="hack-panel-inner">
-              <div class="function-intro">
-                <div><h3>Traductor de funciones de Excel</h3><p>Escribe el nombre en español o en inglés; también reconoce búsquedas sin puntos, como “CONTAR SI”.</p></div>
-                <div class="function-stat"><strong id="functionCount">522</strong><span>equivalencias</span></div>
-                <div class="function-stat"><strong id="functionCategoryCount">14</strong><span>categorías</span></div>
-              </div>
-
-              <div class="function-toolbar">
-                <label class="compact-field"><span class="sr-only">Buscar función en español o inglés</span><input id="functionSearch" type="search" autocomplete="off" placeholder="SI, IF, BUSCARX, XLOOKUP…"></label>
-                <label class="control-field"><span>Categoría</span><select id="functionCategory" aria-label="Categoría de funciones"></select></label>
-                <label class="control-field"><span>Versión</span><select id="functionVersion" aria-label="Versión de Excel"></select></label>
-              </div>
-              <div class="function-meta">
-                <span class="function-status" id="functionStatus" aria-live="polite"></span>
-                <div class="function-actions">
-                  <button class="secondary-button" id="clearFunctionSearch" type="button">Limpiar</button>
-                  <button class="secondary-button" id="moreFunctions" type="button">Mostrar 20 más</button>
-                </div>
-              </div>
-              <div class="function-list" id="functionList" role="list" aria-label="Equivalencias de funciones"></div>
-              <p class="function-note"><strong>Alcance:</strong> recopilación de 522 entradas del índice oficial de Microsoft, consultado el 13 de agosto de 2026. La disponibilidad y algunos nombres recientes pueden variar según versión, canal, compilación o región; no incluye Power Query M, DAX, VBA, complementos de terceros ni funciones personalizadas. Los separadores <code>;</code> o <code>,</code> también dependen de tu configuración regional.</p>
-              <div class="source-links">
-                <a href="https://support.microsoft.com/es-es/excel/excel-functions-alphabetical" target="_blank" rel="noreferrer">Índice oficial en español ↗</a>
-                <a href="https://support.microsoft.com/en-us/excel/excel-functions-alphabetical" target="_blank" rel="noreferrer">Índice oficial en inglés ↗</a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -1888,80 +1816,7 @@
       { id: 'ref-objetivo', category: 'Herramientas', name: 'Buscar objetivo', summary: 'Encuentra una entrada para una meta.', detail: 'Modifica una sola variable hasta que una fórmula alcance un valor deseado. Si hay varias variables y restricciones, la herramienta indicada es Solver.', code: 'Datos > Análisis de hipótesis > Buscar objetivo', week: 20, tags: ['meta', 'escenarios', 'Y si', 'Solver'] }
     ];
 
-    const shortcutBank = [
-      { id: 'sc-block-edge', category: 'Navegación', action: 'Saltar al borde de los datos', summary: 'Recorre listas largas sin usar la barra de desplazamiento.', win: 'Ctrl + Flecha', mac: 'Cmd + Flecha', detail: 'Desde una celda con datos, salta hasta el siguiente borde del bloque continuo en la dirección elegida.', tip: 'Combínalo con Mayús para seleccionar mientras avanzas.', caution: 'Las celdas vacías intermedias detienen el salto.', level: 'Esencial', tags: ['moverse', 'ctrl flecha', 'lista'] },
-      { id: 'sc-select-edge', category: 'Navegación', action: 'Seleccionar hasta el borde', summary: 'Selecciona cientos de filas o columnas de una sola vez.', win: 'Ctrl + Shift + Flecha', mac: 'Shift + Cmd + Flecha', detail: 'Extiende la selección activa hasta el límite del bloque de datos.', tip: 'Ideal antes de copiar, formatear o crear una tabla.', caution: 'Revisa si hay huecos en la columna antes de confiar en la selección.', level: 'Esencial', tags: ['selección', 'rango', 'mayús'] },
-      { id: 'sc-go-to', category: 'Navegación', action: 'Ir a una celda o rango', summary: 'Abre el cuadro Ir a para saltar directamente a una referencia.', win: 'Ctrl + G / F5', mac: 'Ctrl + G / F5', detail: 'Escribe una dirección como A5000, una hoja con celda o un nombre definido.', tip: 'También da acceso a Ir a especial para blancos, fórmulas y constantes.', caution: 'En portátiles, F5 puede requerir Fn.', level: 'Esencial', tags: ['ir a', 'f5', 'rango', 'especial'] },
-      { id: 'sc-first-cell', category: 'Navegación', action: 'Volver al inicio de la hoja', summary: 'Regresa rápidamente al inicio de la hoja, normalmente A1.', win: 'Ctrl + Inicio', mac: 'Ctrl + Inicio', detail: 'Lleva la selección al comienzo de la hoja, normalmente A1.', tip: 'Úsalo después de revisar una tabla muy larga.', caution: 'En algunos MacBook se requiere Fn con la tecla equivalente a Inicio.', level: 'Esencial', tags: ['a1', 'inicio', 'home'] },
-      { id: 'sc-last-used', category: 'Navegación', action: 'Ir a la última celda usada', summary: 'Detecta hasta dónde considera Excel que llega la hoja.', win: 'Ctrl + Fin', mac: 'Ctrl + Fin', detail: 'Salta a la intersección de la última fila y columna consideradas usadas.', tip: 'Ayuda a descubrir formato residual que infla el tamaño del archivo.', caution: 'La celda puede estar vacía si tuvo contenido o formato anteriormente.', level: 'Intermedio', tags: ['última celda', 'fin', 'end', 'archivo pesado'] },
-      { id: 'sc-switch-sheet', category: 'Navegación', action: 'Cambiar de hoja', summary: 'Avanza o retrocede entre pestañas sin soltar el teclado.', win: 'Ctrl + AvPág / Ctrl + RePág', mac: 'Option + Flecha derecha / Option + Flecha izquierda', detail: 'Activa la hoja siguiente o anterior del libro.', tip: 'Funciona muy bien al comparar una hoja DATOS con una hoja RESUMEN.', caution: 'La combinación puede variar según el teclado del portátil.', level: 'Esencial', tags: ['hoja siguiente', 'page down', 'pestaña'] },
-      { id: 'sc-select-column', category: 'Navegación', action: 'Seleccionar una columna', summary: 'Selecciona toda la columna de la celda activa.', win: 'Ctrl + Espacio', mac: 'Ctrl + Espacio', detail: 'Selecciona la columna completa para aplicar formato, insertar o eliminar.', tip: 'Dentro de una tabla puede requerir dos pulsaciones para pasar de datos a columna completa.', caution: 'No elimines una columna completa sin verificar encabezados y fórmulas.', level: 'Esencial', tags: ['columna', 'selección'] },
-      { id: 'sc-select-row', category: 'Navegación', action: 'Seleccionar una fila', summary: 'Selecciona toda la fila de la celda activa.', win: 'Shift + Espacio', mac: 'Shift + Espacio', detail: 'Selecciona la fila completa para formatear, insertar, ocultar o eliminar.', tip: 'Combínalo después con Ctrl o Cmd + para insertar.', caution: 'Confirma que no estás dentro de una edición de celda.', level: 'Esencial', tags: ['fila', 'selección'] },
-      { id: 'sc-visible-only', category: 'Navegación', action: 'Seleccionar solo celdas visibles', summary: 'Evita copiar filas ocultas de un rango filtrado.', win: 'Alt + ;', mac: 'Shift + Cmd + *', detail: 'Convierte una selección filtrada en una selección formada solo por las celdas visibles.', tip: 'Úsalo antes de copiar resultados de un filtro.', caution: 'Los símbolos pueden cambiar de posición en teclados latinos.', level: 'Avanzado', tags: ['visibles', 'filtro', 'copiar'] },
-      { id: 'sc-edit-cell', category: 'Edición', action: 'Editar la celda activa', summary: 'Entra al contenido sin hacer doble clic.', win: 'F2', mac: 'F2', detail: 'Coloca el cursor dentro de la celda o de su fórmula para editarla.', tip: 'Presiona Esc para cancelar los cambios.', caution: 'En portátiles puede necesitar Fn + F2.', level: 'Esencial', tags: ['editar', 'fórmula', 'f2'] },
-      { id: 'sc-line-break', category: 'Edición', action: 'Insertar un salto dentro de la celda', summary: 'Crea varias líneas sin ocupar filas adicionales.', win: 'Alt + Enter', mac: 'Option + Return', detail: 'Mientras editas una celda, inserta un salto de línea en la posición del cursor.', tip: 'Activa Ajustar texto si la segunda línea no se ve completa.', caution: 'No lo confundas con Enter, que termina la edición.', level: 'Esencial', tags: ['salto de línea', 'enter', 'texto'] },
-      { id: 'sc-fill-selection', category: 'Edición', action: 'Rellenar toda la selección', summary: 'Escribe el mismo valor o fórmula en muchas celdas al instante.', win: 'Ctrl + Enter', mac: 'Cmd + Return', detail: 'Selecciona el rango, escribe una vez y confirma con la combinación.', tip: 'Con Ir a especial puedes rellenar solo los blancos.', caution: 'Sobrescribe el contenido de todas las celdas seleccionadas.', level: 'Intermedio', tags: ['rellenar', 'múltiples celdas', 'blancos'] },
-      { id: 'sc-fill-down', category: 'Edición', action: 'Rellenar hacia abajo', summary: 'Copia la celda superior a toda la selección.', win: 'Ctrl + D', mac: 'Cmd + D', detail: 'Replica contenido, fórmula y formato desde la primera fila del rango seleccionado.', tip: 'Las referencias relativas se ajustan en cada fila.', caution: 'Selecciona también la celda que contiene el origen.', level: 'Esencial', tags: ['copiar fórmula', 'abajo', 'relleno'] },
-      { id: 'sc-fill-right', category: 'Edición', action: 'Rellenar hacia la derecha', summary: 'Copia la primera columna a las columnas seleccionadas.', win: 'Ctrl + R', mac: 'Cmd + R', detail: 'Replica el contenido desde el borde izquierdo de la selección.', tip: 'Es útil en modelos mensuales que se extienden por columnas.', caution: 'Comprueba qué referencias deben quedar absolutas antes de copiar.', level: 'Intermedio', tags: ['copiar fórmula', 'derecha', 'relleno'] },
-      { id: 'sc-flash-fill', category: 'Edición', action: 'Aplicar Relleno rápido', summary: 'Reconoce patrones para separar o combinar texto.', win: 'Ctrl + Shift + E / Ctrl + E (Excel en inglés)', mac: 'Ctrl + E', detail: 'Después de escribir uno o dos ejemplos, Excel intenta completar el resto de la columna siguiendo el patrón.', tip: 'Funciona para nombres, códigos, correos y fechas presentadas como texto.', caution: 'En Excel de escritorio para Windows en español usa Ctrl + Mayús + E; Ctrl + E corresponde a Excel en inglés o a algunos entornos web. El resultado es estático.', level: 'Intermedio', tags: ['relleno rápido', 'flash fill', 'texto'] },
-      { id: 'sc-current-date', category: 'Edición', action: 'Insertar la fecha actual', summary: 'Registra la fecha como un valor fijo.', win: 'Ctrl + ;', mac: 'Ctrl + ;', detail: 'Inserta la fecha del sistema en la celda activa sin fórmula.', tip: 'Úsalo para bitácoras donde la fecha no debe cambiar mañana.', caution: 'Para una fecha dinámica usa HOY().', level: 'Esencial', tags: ['fecha', 'hoy', 'registro'] },
-      { id: 'sc-current-time', category: 'Edición', action: 'Insertar la hora actual', summary: 'Registra la hora como un valor fijo.', win: 'Ctrl + Shift + :', mac: 'Cmd + ;', detail: 'Inserta la hora del sistema en la celda activa.', tip: 'Combínalo con la fecha en otra columna para una bitácora.', caution: 'La tecla exacta puede variar con la distribución regional.', level: 'Intermedio', tags: ['hora', 'ahora', 'registro'] },
-      { id: 'sc-insert-cells', category: 'Edición', action: 'Insertar celdas, filas o columnas', summary: 'Abre la inserción según la selección actual.', win: 'Ctrl + Shift + +', mac: 'Ctrl + Shift + =', detail: 'Inserta celdas o, si seleccionaste una fila o columna completa, agrega una nueva.', tip: 'Selecciona primero la fila con Shift + Espacio.', caution: 'Verifica cómo se desplazarán las fórmulas vecinas.', level: 'Intermedio', tags: ['insertar', 'fila', 'columna'] },
-      { id: 'sc-delete-cells', category: 'Edición', action: 'Eliminar celdas, filas o columnas', summary: 'Quita la selección y permite decidir el desplazamiento.', win: 'Ctrl + -', mac: 'Cmd + -', detail: 'Elimina celdas o estructuras completas según la selección.', tip: 'Selecciona una fila o columna entera para evitar el cuadro de opciones.', caution: 'Eliminar no es lo mismo que borrar contenido; la estructura cambia.', level: 'Intermedio', tags: ['eliminar', 'fila', 'columna'] },
-      { id: 'sc-undo', category: 'Edición', action: 'Deshacer la última acción', summary: 'Revierte rápidamente un cambio accidental.', win: 'Ctrl + Z', mac: 'Cmd + Z', detail: 'Recorre hacia atrás el historial reciente de acciones compatibles.', tip: 'Puedes pulsarlo varias veces para retroceder varios pasos.', caution: 'Algunas operaciones de macros o actualización no son reversibles.', level: 'Esencial', tags: ['deshacer', 'error'] },
-      { id: 'sc-redo', category: 'Edición', action: 'Rehacer una acción', summary: 'Recupera el cambio que acabas de deshacer.', win: 'Ctrl + Y', mac: 'Cmd + Y', detail: 'Avanza de nuevo en el historial después de usar Deshacer.', tip: 'En ciertos contextos también repite la última acción.', caution: 'El historial puede reiniciarse al cerrar el archivo.', level: 'Esencial', tags: ['rehacer', 'repetir'] },
-      { id: 'sc-autosum', category: 'Fórmulas', action: 'Insertar Autosuma', summary: 'Propone una SUMA sobre el rango contiguo.', win: 'Alt + =', mac: 'Shift + Cmd + T', detail: 'Inserta SUMA y selecciona automáticamente el rango que Excel considera más probable.', tip: 'Confirma visualmente el rango antes de presionar Enter.', caution: 'Las filas vacías pueden hacer que el rango propuesto sea incompleto.', level: 'Esencial', tags: ['suma', 'autosuma', 'fórmula'] },
-      { id: 'sc-show-formulas', category: 'Fórmulas', action: 'Mostrar u ocultar fórmulas', summary: 'Cambia de resultados a fórmulas en toda la hoja.', win: 'Ctrl + `', mac: 'Ctrl + `', detail: 'Permite auditar de un vistazo qué celdas contienen cálculos.', tip: 'Vuelve a pulsarlo para regresar a los resultados.', caution: 'La tecla de acento grave cambia de ubicación según el teclado.', level: 'Intermedio', tags: ['auditar', 'mostrar fórmulas', 'acento grave'] },
-      { id: 'sc-toggle-reference', category: 'Fórmulas', action: 'Alternar referencias con $', summary: 'Cambia entre referencia relativa, absoluta y mixta.', win: 'F4', mac: 'Cmd + T / F4', detail: 'Mientras editas una referencia, recorre A1, $A$1, A$1 y $A1. Fuera de una fórmula, F4 puede repetir la última acción.', tip: 'Coloca el cursor dentro o junto a la referencia antes de pulsarlo.', caution: 'En Mac, Cmd + T crea una tabla cuando no estás editando una fórmula.', level: 'Esencial', tags: ['f4', 'absoluta', 'anclar', 'fijar celda'] },
-      { id: 'sc-insert-function', category: 'Fórmulas', action: 'Abrir Insertar función', summary: 'Busca una función y muestra sus argumentos.', win: 'Shift + F3', mac: 'Shift + F3', detail: 'Abre el asistente para localizar una función por descripción o categoría.', tip: 'Úsalo cuando recuerdas la tarea, pero no el nombre de la función.', caution: 'Puede requerir Fn en teclados compactos.', level: 'Esencial', tags: ['fx', 'asistente', 'argumentos'] },
-      { id: 'sc-formula-above', category: 'Fórmulas', action: 'Copiar la fórmula de arriba', summary: 'Lleva la fórmula superior a la celda activa.', win: "Ctrl + '", mac: "Ctrl + '", detail: 'Copia la fórmula de la celda situada inmediatamente arriba.', tip: 'Es útil para corregir una fórmula faltante dentro de una columna.', caution: 'Revisa el ajuste de referencias relativas.', level: 'Intermedio', tags: ['copiar fórmula', 'arriba', 'apóstrofo'] },
-      { id: 'sc-calculate-all', category: 'Fórmulas', action: 'Calcular todos los libros abiertos', summary: 'Fuerza un recálculo cuando el modo es manual.', win: 'F9', mac: 'F9', detail: 'Recalcula las fórmulas pendientes de todos los libros abiertos.', tip: 'Úsalo al revisar modelos grandes configurados en cálculo manual.', caution: 'Puede tardar en libros con muchas fórmulas o conexiones.', level: 'Avanzado', tags: ['calcular', 'f9', 'manual'] },
-      { id: 'sc-calculate-sheet', category: 'Fórmulas', action: 'Calcular solo la hoja activa', summary: 'Actualiza la hoja actual sin recalcular todo.', win: 'Shift + F9', mac: 'Shift + F9', detail: 'Fuerza el cálculo de las fórmulas de la hoja activa.', tip: 'Ahorra tiempo durante pruebas en un modelo pesado.', caution: 'Otras hojas pueden conservar resultados pendientes.', level: 'Avanzado', tags: ['calcular hoja', 'f9', 'rendimiento'] },
-      { id: 'sc-function-arguments', category: 'Fórmulas', action: 'Abrir argumentos de la función', summary: 'Muestra el asistente de la función que estás escribiendo.', win: 'Ctrl + E / Ctrl + A (Excel en inglés)', mac: 'Ctrl + A', detail: 'Con el cursor justo a la derecha del nombre de una función, abre su cuadro de argumentos.', tip: 'Ayuda a entender qué dato espera cada posición.', caution: 'En Excel de escritorio para Windows en español usa Ctrl + E; la guía inglesa indica Ctrl + A. Fuera de este contexto ambas combinaciones tienen otro efecto.', level: 'Intermedio', tags: ['argumentos', 'función', 'asistente'] },
-      { id: 'sc-create-table', category: 'Datos', action: 'Convertir un rango en Tabla', summary: 'Activa filtros, formato y referencias estructuradas.', win: 'Ctrl + T', mac: 'Cmd + T', detail: 'Convierte el rango seleccionado en una Tabla de Excel que crece con los datos.', tip: 'Marca correctamente si la selección tiene encabezados.', caution: 'En Mac, Cmd + T también alterna referencias mientras editas fórmulas.', level: 'Esencial', tags: ['tabla', 'filtros', 'estructuradas'] },
-      { id: 'sc-toggle-filter', category: 'Datos', action: 'Activar o quitar filtros', summary: 'Muestra los desplegables de filtro en los encabezados.', win: 'Ctrl + Shift + L', mac: 'Cmd + Shift + F / Ctrl + Shift + L', detail: 'Activa o desactiva Autofiltro para el rango de datos actual.', tip: 'Sitúate dentro del conjunto de datos antes de usarlo.', caution: 'No elimina criterios anteriores; revisa el estado del filtro.', level: 'Esencial', tags: ['filtro', 'autofiltro', 'encabezados'] },
-      { id: 'sc-open-filter', category: 'Datos', action: 'Abrir filtro o lista desplegable', summary: 'Abre el menú de filtro o validación de la celda.', win: 'Alt + Flecha abajo', mac: 'Option + Flecha abajo', detail: 'Con el foco en un encabezado filtrable o una celda con validación, abre su lista.', tip: 'Después puedes navegar por las opciones con las flechas.', caution: 'El contexto de la celda determina qué lista aparece.', level: 'Intermedio', tags: ['filtro', 'validación', 'lista'] },
-      { id: 'sc-paste-special', category: 'Datos', action: 'Abrir Pegado especial', summary: 'Pega valores, fórmulas, formatos o datos transpuestos.', win: 'Ctrl + Alt + V', mac: 'Cmd + Ctrl + V', detail: 'Abre las opciones para controlar exactamente qué parte de lo copiado se pega.', tip: 'Para reemplazar fórmulas por resultados elige Valores.', caution: 'Pegar valores elimina la lógica original de las fórmulas.', level: 'Esencial', tags: ['pegar valores', 'pegado especial', 'transponer'] },
-      { id: 'sc-quick-analysis', category: 'Datos', action: 'Abrir Análisis rápido', summary: 'Sugiere formatos, totales, tablas y gráficos.', win: 'Ctrl + Q', mac: '', detail: 'Muestra una galería contextual para analizar el rango seleccionado.', tip: 'Es una forma rápida de explorar opciones antes de construir el reporte.', caution: 'No hay un equivalente predeterminado documentado para macOS.', level: 'Intermedio', tags: ['análisis rápido', 'gráfico', 'totales'] },
-      { id: 'sc-chart-sheet', category: 'Datos', action: 'Crear un gráfico en hoja nueva', summary: 'Convierte el rango en un gráfico de forma inmediata.', win: 'F11', mac: 'F11', detail: 'Crea un gráfico basado en la selección y lo coloca en una hoja de gráfico independiente.', tip: 'Selecciona primero encabezados y datos completos.', caution: 'Excel elige un tipo inicial; cámbialo si no responde a tu pregunta.', level: 'Intermedio', tags: ['gráfico', 'f11', 'visualización'] },
-      { id: 'sc-embedded-chart', category: 'Datos', action: 'Crear un gráfico incrustado', summary: 'Inserta un gráfico dentro de la hoja activa.', win: 'Alt + F1', mac: '', detail: 'Genera un gráfico con la selección actual sin salir de la hoja.', tip: 'Es útil para un boceto rápido de dashboard.', caution: 'No hay un equivalente predeterminado documentado para macOS.', level: 'Intermedio', tags: ['gráfico', 'dashboard', 'alt f1'] },
-      { id: 'sc-refresh-all', category: 'Datos', action: 'Actualizar todas las conexiones', summary: 'Recarga consultas, tablas dinámicas y conexiones.', win: 'Ctrl + Alt + F5', mac: '', detail: 'Solicita la actualización de todas las fuentes externas compatibles del libro.', tip: 'Revisa después la fecha de actualización y los errores de consulta.', caution: 'No hay un equivalente predeterminado documentado para macOS y puede requerir permisos.', level: 'Avanzado', tags: ['actualizar todo', 'power query', 'conexiones'] },
-      { id: 'sc-format-cells', category: 'Formato', action: 'Abrir Formato de celdas', summary: 'Reúne número, alineación, borde, relleno y protección.', win: 'Ctrl + 1', mac: 'Cmd + 1', detail: 'Abre el cuadro completo de formato para la selección.', tip: 'Es la ruta más rápida para crear formatos numéricos personalizados.', caution: 'El formato cambia la apariencia, no el valor almacenado.', level: 'Esencial', tags: ['formato', 'número', 'celdas'] },
-      { id: 'sc-percent', category: 'Formato', action: 'Aplicar formato de porcentaje', summary: 'Muestra decimales como porcentajes.', win: 'Ctrl + Shift + %', mac: 'Ctrl + Shift + %', detail: 'Aplica el formato Porcentaje a las celdas seleccionadas.', tip: 'El valor 0.16 se muestra como 16 %.', caution: 'Si escribiste 16 esperando 16 %, el resultado será 1600 %.', level: 'Esencial', tags: ['porcentaje', 'formato', '%'] },
-      { id: 'sc-currency', category: 'Formato', action: 'Aplicar formato de moneda', summary: 'Da formato monetario a los valores seleccionados.', win: 'Ctrl + Shift + $', mac: 'Ctrl + Shift + $', detail: 'Aplica el formato de moneda predeterminado por la configuración regional.', tip: 'Usa Ctrl/Cmd + 1 para elegir símbolo y decimales con precisión.', caution: 'El símbolo depende de la configuración del equipo.', level: 'Esencial', tags: ['moneda', 'dinero', 'formato'] },
-      { id: 'sc-new-sheet', category: 'Navegación', action: 'Insertar una hoja nueva', summary: 'Agrega una pestaña al libro inmediatamente.', win: 'Shift + F11', mac: 'Shift + F11', detail: 'Crea una hoja antes de la hoja activa.', tip: 'Renómbrala de inmediato para mantener ordenado el libro.', caution: 'En portátiles puede requerir Fn y entrar en conflicto con teclas del sistema.', level: 'Esencial', tags: ['nueva hoja', 'pestaña', 'f11'] },
-      { id: 'sc-hide-row', category: 'Formato', action: 'Ocultar filas seleccionadas', summary: 'Esconde temporalmente las filas sin borrarlas.', win: 'Ctrl + 9', mac: 'Ctrl + 9', detail: 'Oculta las filas que cruzan la selección actual.', tip: 'Usa filtros cuando el ocultamiento responda a un criterio repetible.', caution: 'Los datos ocultos siguen existiendo y pueden entrar en cálculos.', level: 'Intermedio', tags: ['ocultar', 'fila'] },
-      { id: 'sc-hide-column', category: 'Formato', action: 'Ocultar columnas seleccionadas', summary: 'Esconde temporalmente columnas auxiliares.', win: 'Ctrl + 0', mac: 'Ctrl + 0', detail: 'Oculta las columnas que cruzan la selección actual.', tip: 'Puede limpiar una vista de presentación sin borrar cálculos.', caution: 'El sistema operativo o la configuración pueden reservar esta combinación.', level: 'Intermedio', tags: ['ocultar', 'columna'] },
-      { id: 'sc-macros', category: 'Automatización', action: 'Abrir el cuadro de macros', summary: 'Ejecuta, edita o revisa las macros disponibles.', win: 'Alt + F8', mac: 'Option + F8', detail: 'Muestra las macros accesibles en el libro y sus opciones.', tip: 'Ejecuta solo macros de una fuente confiable.', caution: 'Puede requerir Fn y las macros no funcionan en todos los entornos web.', level: 'Avanzado', tags: ['macro', 'vba', 'f8'] },
-      { id: 'sc-vba', category: 'Automatización', action: 'Abrir el editor de VBA', summary: 'Accede al código del libro en Excel de escritorio.', win: 'Alt + F11', mac: 'Option + F11', detail: 'Abre el entorno de Visual Basic para Aplicaciones.', tip: 'Guarda el archivo como .xlsm antes de conservar código.', caution: 'El editor no está disponible en Excel para la web.', level: 'Avanzado', tags: ['vba', 'editor', 'macro', 'f11'] }
-    ];
 
-    const hackTips = [
-      { id: 'tip-fill-handle', category: 'Trucos', action: 'Doble clic en el controlador de relleno', summary: 'Copia una fórmula hasta el final del bloque vecino.', win: '', mac: '', detail: 'Selecciona la celda con la fórmula y haz doble clic en el pequeño cuadro de su esquina inferior derecha.', tip: 'Excel usa la columna contigua para estimar hasta qué fila rellenar.', caution: 'Los huecos en la columna vecina pueden detener el relleno.', level: 'Esencial', tags: ['controlador', 'rellenar', 'doble clic'], isTip: true },
-      { id: 'tip-status-bar', category: 'Trucos', action: 'Calcula desde la barra de estado', summary: 'Obtén suma, promedio y conteo sin escribir fórmulas.', win: '', mac: '', detail: 'Selecciona varias celdas numéricas y mira la barra inferior de Excel.', tip: 'Haz clic derecho en la barra para elegir qué cálculos se muestran.', caution: 'Es una consulta rápida; no deja el resultado guardado en la hoja.', level: 'Esencial', tags: ['suma rápida', 'promedio', 'barra de estado'], isTip: true },
-      { id: 'tip-table', category: 'Trucos', action: 'Convierte las bases en Tablas', summary: 'Los rangos crecen, filtran y copian fórmulas automáticamente.', win: '', mac: '', detail: 'Selecciona el rango, crea una Tabla y asígnale un nombre claro desde Diseño de tabla.', tip: 'Las referencias como Ventas[Importe] son más fáciles de auditar que rangos fijos.', caution: 'No uses filas de subtotal manuales dentro de la base.', level: 'Esencial', tags: ['tabla', 'referencia estructurada', 'base'], isTip: true },
-      { id: 'tip-blanks', category: 'Trucos', action: 'Rellena todos los blancos a la vez', summary: 'Usa Ir a especial y confirma una sola entrada para muchas celdas.', win: '', mac: '', detail: 'Selecciona el rango, abre Ir a especial > Blancos, escribe el valor o referencia y confirma toda la selección con Ctrl + Enter en Windows o Cmd + Return en Mac.', tip: 'Para heredar el dato superior, escribe = y pulsa Flecha arriba antes de confirmar.', caution: 'Revisa que cada blanco deba recibir realmente un valor.', level: 'Intermedio', tags: ['blancos', 'ir a especial', 'rellenar'], isTip: true },
-      { id: 'tip-values', category: 'Trucos', action: 'Pega solo valores al cerrar un cálculo', summary: 'Conserva resultados sin arrastrar fórmulas ni formatos.', win: '', mac: '', detail: 'Copia el rango y usa Pegado especial > Valores cuando ya no necesites la lógica original.', tip: 'Sirve para entregar una versión estable o evitar vínculos externos.', caution: 'Guarda antes una copia con las fórmulas si podrías necesitarlas.', level: 'Intermedio', tags: ['pegar valores', 'fórmulas', 'entrega'], isTip: true },
-      { id: 'tip-transpose', category: 'Trucos', action: 'Cambia filas por columnas', summary: 'Reorganiza una tabla con Transponer en Pegado especial.', win: '', mac: '', detail: 'Copia el rango, elige una celda destino vacía y activa Transponer dentro de Pegado especial.', tip: 'Para un resultado dinámico en versiones modernas, explora TRANSPONER.', caution: 'La operación de pegado crea una copia estática.', level: 'Intermedio', tags: ['transponer', 'filas', 'columnas'], isTip: true },
-      { id: 'tip-name-box', category: 'Trucos', action: 'Navega con el Cuadro de nombres', summary: 'Escribe una referencia para seleccionarla inmediatamente.', win: '', mac: '', detail: 'Usa el cuadro situado a la izquierda de la barra de fórmulas y escribe A5000 o un rango como B2:F200.', tip: 'También puedes crear nombres descriptivos para rangos importantes.', caution: 'Los nombres no pueden parecer referencias de celda ni contener espacios.', level: 'Intermedio', tags: ['cuadro de nombres', 'rango', 'navegar'], isTip: true },
-      { id: 'tip-freeze', category: 'Trucos', action: 'Inmoviliza fila y columna a la vez', summary: 'Mantén visibles encabezados horizontales y verticales.', win: '', mac: '', detail: 'Selecciona la celda que está una fila debajo y una columna a la derecha de lo que deseas fijar; luego usa Inmovilizar paneles.', tip: 'Para fijar fila 1 y columna A, selecciona B2.', caution: 'Si el resultado no es el esperado, moviliza paneles y vuelve a seleccionar.', level: 'Esencial', tags: ['inmovilizar', 'encabezados', 'paneles'], isTip: true },
-      { id: 'tip-evaluate-f9', category: 'Trucos', action: 'Evalúa una parte de la fórmula con F9', summary: 'Descubre qué devuelve un fragmento antes de terminar la fórmula.', win: '', mac: '', detail: 'Mientras editas, selecciona solo una parte válida de la fórmula y pulsa F9 para ver su resultado.', tip: 'Es excelente para depurar funciones anidadas.', caution: 'Pulsa Esc para salir; si confirmas con Enter, reemplazarás la fórmula por el valor evaluado.', level: 'Avanzado', tags: ['depurar', 'f9', 'evaluar fórmula'], isTip: true },
-      { id: 'tip-custom-format', category: 'Trucos', action: 'Añade unidades sin convertir números en texto', summary: 'Muestra kg, h o piezas y conserva el valor calculable.', win: '', mac: '', detail: 'En Formato de celdas > Personalizada usa, por ejemplo, 0 "kg".', tip: 'El texto entre comillas solo cambia la presentación.', caution: 'No escribas la unidad directamente junto al número si después necesitas sumar.', level: 'Intermedio', tags: ['formato personalizado', 'kg', 'unidades'], isTip: true },
-      { id: 'tip-remove-duplicates', category: 'Trucos', action: 'Quita duplicados con una verificación', summary: 'Limpia registros sin perder el control del resultado.', win: '', mac: '', detail: 'Conserva una copia, cuenta las filas, aplica Quitar duplicados sobre las columnas clave y compara el conteo final.', tip: 'Define primero qué combinación de campos hace único a un registro.', caution: 'La herramienta elimina filas; no es solo un filtro visual.', level: 'Intermedio', tags: ['duplicados', 'limpieza', 'datos'], isTip: true },
-      { id: 'tip-wildcards', category: 'Trucos', action: 'Usa comodines en búsquedas y criterios', summary: 'Encuentra textos parciales con * y un carácter con ?.', win: '', mac: '', detail: 'El asterisco representa cualquier cantidad de caracteres y el signo de interrogación representa exactamente uno.', tip: 'Ejemplo: *norte* encuentra cualquier texto que contenga “norte”.', caution: 'Para buscar un asterisco literal, antepón una virgulilla: ~*.', level: 'Intermedio', tags: ['comodines', 'asterisco', 'buscar', 'criterio'], isTip: true },
-      { id: 'tip-print-titles', category: 'Trucos', action: 'Repite encabezados al imprimir', summary: 'Hace legible cada página de una tabla extensa.', win: '', mac: '', detail: 'En Diseño de página > Imprimir títulos, indica las filas que deben repetirse en la parte superior.', tip: 'Revisa la vista previa antes de imprimir o exportar a PDF.', caution: 'No es lo mismo que definir el área de impresión.', level: 'Intermedio', tags: ['imprimir', 'encabezados', 'páginas'], isTip: true },
-      { id: 'tip-formula-reading', category: 'Trucos', action: 'Lee fórmulas por capas', summary: 'Identifica primero la función exterior y después sus argumentos.', win: '', mac: '', detail: 'Ubica la función principal, separa sus argumentos y abre de dentro hacia fuera cada función anidada.', tip: 'Usa colores de referencia y el asistente de argumentos para seguir rangos.', caution: 'No edites varios paréntesis a la vez sin comprobar el resultado.', level: 'Intermedio', tags: ['fórmula', 'anidada', 'argumentos'], isTip: true },
-      { id: 'tip-backup', category: 'Trucos', action: 'Prueba transformaciones en una copia', summary: 'Haz reversibles los cambios de alto impacto.', win: '', mac: '', detail: 'Antes de quitar duplicados, romper vínculos, ejecutar macros o reemplazar masivamente, guarda una copia identificada.', tip: 'Incluye fecha y propósito en el nombre de la copia.', caution: 'El historial de Deshacer no cubre todas las operaciones.', level: 'Esencial', tags: ['copia', 'seguridad', 'macro', 'reemplazar'], isTip: true }
-    ];
-
-    const functionEquivalenceRows = [["ABS","ABS","Matemáticas y trigonometría","","functions/abs-function",1],["ACOS","ACOS","Matemáticas y trigonometría","","functions/acos-function",1],["ACOSH","ACOSH","Matemáticas y trigonometría","","functions/acosh-function",1],["ACOT","ACOT","Matemáticas y trigonometría","2013","functions/acot-function",1],["ACOTH","ACOTH","Matemáticas y trigonometría","2013","functions/acoth-function",1],["AGREGAR","AGGREGATE","Matemáticas y trigonometría","","functions/aggregate-function",1],["AHORA","NOW","Fecha y hora","","functions/now-function",1],["AJUSTARCOLS","WRAPCOLS","Buscar y hacer referencia","2024","functions/wrapcols-function",1],["AJUSTARFILAS","WRAPROWS","Buscar y hacer referencia","2024","functions/wraprows-function",1],["ALEATORIO","RAND","Matemáticas y trigonometría","","functions/rand-function",1],["ALEATORIO.ENTRE","RANDBETWEEN","Matemáticas y trigonometría","","functions/randbetween-function",1],["AMORTIZ.LIN","AMORLINC","Finanzas","","functions/amorlinc-function",1],["AMORTIZ.PROGRE","AMORDEGRC","Finanzas","","functions/amordegrc-function",1],["AÑO","YEAR","Fecha y hora","","functions/year-function",1],["APILARH","HSTACK","Búsqueda y referencia","2024","functions/hstack-function",1],["APILARV","VSTACK","Buscar y hacer referencia","2024","functions/vstack-function",1],["AREAS","AREAS","Búsqueda y referencia","","functions/areas-function",1],["ASC","ASC","Texto","","functions/asc-function",1],["ASENO","ASIN","Matemáticas y trigonometría","","functions/asin-function",1],["ASENOH","ASINH","Matemáticas y trigonometría","","functions/asinh-function",1],["ATAN","ATAN","Matemáticas y trigonometría","","functions/atan-function",1],["ATAN2","ATAN2","Matemáticas y trigonometría","","functions/atan2-function",1],["ATANH","ATANH","Matemáticas y trigonometría","","functions/atanh-function",1],["BASE","BASE","Matemáticas y trigonometría","","functions/base-function",1],["BDCONTAR","DCOUNT","Base de datos","","functions/dcount-function",1],["BDCONTARA","DCOUNTA","Base de datos","","functions/dcounta-function",1],["BDDESVEST","DSTDEV","Base de datos","","functions/dstdev-function",1],["BDDESVESTP","DSTDEVP","Base de datos","","functions/dstdevp-function",1],["BDEXTRAER","DGET","Base de datos","","functions/dget-function",1],["BDMAX","DMAX","Base de datos","","functions/dmax-function",1],["BDMIN","DMIN","Base de datos","","functions/dmin-function",1],["BDPRODUCTO","DPRODUCT","Base de datos","","functions/dproduct-function",1],["BDPROMEDIO","DAVERAGE","Base de datos","","functions/daverage-function",1],["BDSUMA","DSUM","Base de datos","","functions/dsum-function",1],["BDVAR","DVAR","Base de datos","","functions/dvar-function",1],["BDVARP","DVARP","Base de datos","","functions/dvarp-function",1],["BESSELI","BESSELI","Ingeniería","","functions/besseli-function",1],["BESSELJ","BESSELJ","Ingeniería","","functions/besselj-function",1],["BESSELK","BESSELK","Ingeniería","","functions/besselk-function",1],["BESSELY","BESSELY","Ingeniería","","functions/bessely-function",1],["BIN.A.DEC","BIN2DEC","Ingeniería","","functions/bin2dec-function",1],["BIN.A.HEX","BIN2HEX","Ingeniería","","functions/bin2hex-function",1],["BIN.A.OCT","BIN2OCT","Ingeniería","","functions/bin2oct-function",1],["BINOM.CRIT","CRITBINOM","Compatibilidad","","functions/critbinom-function",1],["BIT.DESPLDCHA","BITRSHIFT","Ingeniería","2013","functions/bitrshift-function",1],["BIT.DESPLIZQDA","BITLSHIFT","Ingeniería","2013","functions/bitlshift-function",1],["BIT.O","BITOR","Ingeniería","2013","functions/bitor-function",1],["BIT.XO","BITXOR","Ingeniería","2013","functions/bitxor-function",1],["BIT.Y","BITAND","Ingeniería","2013","functions/bitand-function",1],["BUSCAR","LOOKUP","Búsqueda y referencia","","functions/lookup-function",1],["BUSCARH","HLOOKUP","Búsqueda y referencia","","functions/hlookup-function",1],["BUSCARV","VLOOKUP","Búsqueda y referencia","","functions/vlookup-function",1],["BUSCARX","XLOOKUP","Búsqueda y referencia","2021","functions/xlookup-function",1],["BYCOL","BYCOL","Lógica","2024","functions/bycol-function",1],["BYROW","BYROW","Lógica","2024","functions/byrow-function",1],["CAMBIAR","SWITCH","Lógica","2019","functions/switch-function",1],["CANTIDAD.RECIBIDA","RECEIVED","Finanzas","","functions/received-function",1],["CARACTER","CHAR","Texto","","functions/char-function",1],["CELDA","CELL","Información","","functions/cell-function",1],["COCIENTE","QUOTIENT","Matemáticas y trigonometría","","functions/quotient-function",1],["CODIGO","CODE","Texto","","functions/code-function",1],["COEF.DE.CORREL","CORREL","Estadística","","functions/correl-function",1],["COEFICIENTE.ASIMETRIA","SKEW","Estadística","","functions/skew-function",1],["COEFICIENTE.ASIMETRIA.P","SKEW.P","Estadística","2013","functions/skew-p-function",1],["COEFICIENTE.R2","RSQ","Estadística","","functions/rsq-function",1],["COINCIDIR","MATCH","Búsqueda y referencia","","functions/match-function",1],["COINCIDIRX","XMATCH","Búsqueda y referencia","2021","functions/xmatch-function",1],["COLUMNA","COLUMN","Búsqueda y referencia","","functions/column-function",1],["COLUMNAS","COLUMNS","Búsqueda y referencia","","functions/columns-function",1],["COMBINA","COMBINA","Matemáticas y trigonometría","2013","functions/combina-function",1],["COMBINAT","COMBIN","Matemáticas y trigonometría","","functions/combin-function",1],["COMPLEJO","COMPLEX","Ingeniería","","functions/complex-function",1],["CONCAT","CONCAT","Texto","2019","functions/concat-function",1],["CONCATENAR","CONCATENATE","Texto","","functions/concatenate-function",1],["CONJUNTOCUBO","CUBESET","Cubo","","functions/cubeset-function",1],["CONTAR","COUNT","Estadística","","functions/count-function",1],["CONTAR.BLANCO","COUNTBLANK","Estadística","","functions/countblank-function",1],["CONTAR.SI","COUNTIF","Estadística","","get-started/use-the-countif-function-in-microsoft-excel",1],["CONTAR.SI.CONJUNTO","COUNTIFS","Estadística","","functions/countifs-function",1],["CONTARA","COUNTA","Estadística","","functions/counta-function",1],["CONV.DECIMAL","DECIMAL","Matemáticas y trigonometría","2013","functions/decimal-function",1],["CONVERTIR","CONVERT","Ingeniería","","functions/convert-function",1],["COPILOT","COPILOT","Texto","","functions/copilot-function",1],["COS","COS","Matemáticas y trigonometría","","functions/cos-function",1],["COSH","COSH","Matemáticas y trigonometría","","functions/cosh-function",1],["COT","COT","Matemáticas y trigonometría","2013","functions/cot-function",1],["COTH","COTH","Matemáticas y trigonometría","2013","functions/coth-function",1],["COVAR","COVAR","Compatibilidad","","functions/covar-function",1],["COVARIANZA.P","COVARIANCE.P","Estadística","2010","functions/covariance-p-function",1],["COVARIANZA.M","COVARIANCE.S","Estadística","2010","functions/covariance-s-function",1],["CRECIMIENTO","GROWTH","Estadística","","functions/growth-function",1],["CSC","CSC","Matemáticas y trigonometría","2013","functions/csc-function",1],["CSCH","CSCH","Matemáticas y trigonometría","2013","functions/csch-function",1],["CUARTIL","QUARTILE","Compatibilidad","","functions/quartile-function",1],["CUARTIL.EXC","QUARTILE.EXC","Estadística","2010","functions/quartile-exc-function",1],["CUARTIL.INC","QUARTILE.INC","Estadística","2010","functions/quartile-inc-function",1],["CUPON.DIAS","COUPDAYS","Finanzas","","functions/coupdays-function",1],["CUPON.DIAS.L1","COUPDAYBS","Finanzas","","functions/coupdaybs-function",1],["CUPON.DIAS.L2","COUPDAYSNC","Finanzas","","functions/coupdaysnc-function",1],["CUPON.FECHA.L1","COUPPCD","Finanzas","","functions/couppcd-function",1],["CUPON.FECHA.L2","COUPNCD","Finanzas","","functions/coupncd-function",1],["CUPON.NUM","COUPNUM","Finanzas","","functions/coupnum-function",1],["CURTOSIS","KURT","Estadística","","functions/kurt-function",1],["DB","DB","Finanzas","","functions/db-function",1],["DBCS","DBCS","Texto","2013","functions/dbcs-function",1],["DDB","DDB","Finanzas","","functions/ddb-function",1],["DEC.A.BIN","DEC2BIN","Ingeniería","","functions/dec2bin-function",1],["DEC.A.HEX","DEC2HEX","Ingeniería","","functions/dec2hex-function",1],["DEC.A.OCT","DEC2OCT","Ingeniería","","functions/dec2oct-function",1],["DECIMAL","FIXED","Texto","","functions/fixed-function",1],["DELTA","DELTA","Ingeniería","","functions/delta-function",1],["DERECHA","RIGHT","Texto","","functions/right-function",1],["DERECHAB","RIGHTB","Texto","","functions/right-function",1],["DESREF","OFFSET","Búsqueda y referencia","","functions/offset-function",1],["DESVEST","STDEV","Compatibilidad","","functions/stdev-function",1],["DESVEST.M","STDEV.S","Estadística","2010","functions/stdev-s-function",1],["DESVEST.P","STDEV.P","Estadística","2010","functions/stdev-p-function",1],["DESVESTA","STDEVA","Estadística","","functions/stdeva-function",1],["DESVESTP","STDEVP","Compatibilidad","","functions/stdevp-function",1],["DESVESTPA","STDEVPA","Estadística","","functions/stdevpa-function",1],["DESVIA2","DEVSQ","Estadística","","functions/devsq-function",1],["DESVPROM","AVEDEV","Estadística","","functions/avedev-function",1],["DETECTLANGUAGE","DETECTLANGUAGE","Texto","Microsoft 365","functions/detectlanguage-function",1],["DIA","DAY","Fecha y hora","","functions/day-function",1],["DIA.LAB","WORKDAY","Fecha y hora","","functions/workday-function",1],["DIA.LAB.INTL","WORKDAY.INTL","Fecha y hora","2010","functions/workday-intl-function",1],["DIAS","DAYS","Fecha y hora","2013","functions/days-function",1],["DIAS.LAB","NETWORKDAYS","Fecha y hora","","functions/networkdays-function",1],["DIAS.LAB.INTL","NETWORKDAYS.INTL","Fecha y hora","2010","functions/networkdays-intl-function",1],["DIAS360","DAYS360","Fecha y hora","","functions/days360-function",1],["DIASEM","WEEKDAY","Fecha y hora","","functions/weekday-function",1],["DIRECCIÓN","ADDRESS","Búsqueda y referencia","","functions/address-function",1],["DIST.WEIBULL","WEIBULL","Compatibilidad","","functions/weibull-function",1],["DISTR.BETA","BETADIST","Compatibilidad","","functions/betadist-function",1],["DISTR.BETA.INV","BETAINV","Compatibilidad","","functions/betainv-function",1],["DISTR.BETA.N","BETA.DIST","Estadística","2010","functions/beta-dist-function",1],["DISTR.BINOM","BINOMDIST","Compatibilidad","","functions/binomdist-function",1],["DISTR.BINOM.N","BINOM.DIST","Estadística","2010","functions/binom-dist-function",1],["DISTR.BINOM.SERIE","BINOM.DIST.RANGE","Estadística","2013","functions/binom-dist-range-function",1],["DISTR.CHI","CHIDIST","Compatibilidad","","functions/chidist-function",1],["DISTR.CHICUAD","CHISQ.DIST","Estadística","2010","functions/chisq-dist-function",1],["DISTR.CHICUAD.CD","CHISQ.DIST.RT","Estadística","2010","functions/chisq-dist-rt-function",1],["DISTR.EXP","EXPONDIST","Compatibilidad","","functions/expondist-function",1],["DISTR.EXP.N","EXPON.DIST","Estadística","2010","functions/expon-dist-function",1],["DISTR.F","FDIST","Compatibilidad","","functions/fdist-function",1],["DISTR.F.CD","F.DIST.RT","Estadística","2010","functions/f-dist-rt-function",1],["DISTR.F.INV","FINV","Compatibilidad","","functions/finv-function",1],["DISTR.F.N","F.DIST","Estadística","2010","functions/f-dist-function",1],["DISTR.GAMMA","GAMMADIST","Compatibilidad","","functions/gammadist-function",1],["DISTR.GAMMA.INV","GAMMAINV","Compatibilidad","","functions/gammainv-function",1],["DISTR.GAMMA.N","GAMMA.DIST","Estadística","2010","functions/gamma-dist-function",1],["DISTR.HIPERGEOM","HYPGEOMDIST","Compatibilidad","","functions/hypgeomdist-function",1],["DISTR.HIPERGEOM.N","HYPGEOM.DIST","Estadística","","functions/hypgeom-dist-function",1],["DISTR.LOG.INV","LOGINV","Compatibilidad","","functions/loginv-function",1],["DISTR.LOG.NORM","LOGNORMDIST","Compatibilidad","","functions/lognormdist-function",1],["DISTR.LOGNORM","LOGNORM.DIST","Estadística","2010","functions/lognorm-dist-function",1],["DISTR.NORM","NORMDIST","Compatibilidad","","functions/normdist-function",1],["DISTR.NORM.ESTAND","NORMSDIST","Compatibilidad","","functions/normsdist-function",1],["DISTR.NORM.ESTAND.INV","NORMSINV","Compatibilidad","","functions/normsinv-function",1],["DISTR.NORM.ESTAND.N","NORM.S.DIST","Estadística","2010","functions/norm-s-dist-function",1],["DISTR.NORM.INV","NORMINV","Estadística","","functions/norminv-function",1],["DISTR.NORM.N","NORM.DIST","Estadística","2010","functions/norm-dist-function",1],["DISTR.T","TDIST","Compatibilidad","","functions/tdist-function",1],["DISTR.T.2C","T.DIST.2T","Estadística","2010","functions/t-dist-2t-function",1],["DISTR.T.CD","T.DIST.RT","Estadística","2010","functions/t-dist-rt-function",1],["DISTR.T.INV","TINV","Compatibilidad","","functions/tinv-function",1],["DISTR.T.N","T.DIST","Estadística","2010","functions/t-dist-function",1],["DISTR.WEIBULL","WEIBULL.DIST","Estadística","2010","functions/weibull-dist-function",1],["DIVIDIRTEXTO","TEXTSPLIT","Texto","2024","functions/textsplit-function",1],["MONEDA","DOLLAR","Texto","","functions/dollar-function",1],["DURACION","DURATION","Finanzas","","functions/duration-function",1],["DURACION.MODIF","MDURATION","Finanzas","","functions/mduration-function",1],["DVS","VDB","Finanzas","","functions/vdb-function",1],["ELEGIR","CHOOSE","Búsqueda y referencia","","functions/choose-function",1],["ELEGIRCOLS","CHOOSECOLS","Búsqueda y referencia","2024","functions/choosecols-function",1],["ELEGIRFILAS","CHOOSEROWS","Búsqueda y referencia","2024","functions/chooserows-function",1],["URLCODIF","ENCODEURL","Web","2013","functions/encodeurl-function",1],["ENCOL","TOCOL","Búsqueda y referencia","2024","functions/tocol-function",1],["ENCONTRAR","FIND","Texto","","topic/c7912941-af2a-4bdf-a553-d0d89b0a0628",1],["ENCONTRARB","FINDB","Texto","","topic/c7912941-af2a-4bdf-a553-d0d89b0a0628",1],["ENFILA","TOROW","Búsqueda y referencia","2024","functions/torow-function",1],["ENTERO","INT","Matemáticas y trigonometría","","functions/int-function",1],["ERROR.TIPICO.XY","STEYX","Estadística","","functions/steyx-function",1],["ES.IMPAR","ISODD","Información","","is-functions",1],["ES.PAR","ISEVEN","Información","","functions/iseven-function",1],["ESBLANCO","ISBLANK","Información","","is-functions",1],["ESERR","ISERR","Información","","is-functions",1],["ESERROR","ISERROR","Información","","is-functions",1],["ESFORMULA","ISFORMULA","Información","2013","functions/isformula-function",1],["ESLOGICO","ISLOGICAL","Información","","is-functions",1],["ESNOD","ISNA","Información","","is-functions",1],["ESNOTEXTO","ISNONTEXT","Información","","is-functions",1],["ESNUMERO","ISNUMBER","Información","","is-functions",1],["ESPACIOS","TRIM","Texto","","functions/trim-function",1],["ESREF","ISREF","Información","","is-functions",1],["ESTEXTO","ISTEXT","Información","","is-functions",1],["ESTIMACION.LINEAL","LINEST","Estadística","","functions/linest-function",1],["ESTIMACION.LOGARITMICA","LOGEST","Estadística","","functions/logest-function",1],["EUROCONVERT","EUROCONVERT","Complementos y automatización","","functions/euroconvert-function",1],["EXCLUIR","DROP","Búsqueda y referencia","2024","functions/drop-function",1],["EXP","EXP","Matemáticas y trigonometría","","functions/exp-function",1],["EXPANDIR","EXPAND","Búsqueda y referencia","2024","functions/expand-function",1],["EXTRAE","MID","Texto","","functions/mid-function",1],["EXTRAEB","MIDB","Texto","","functions/mid-function",1],["FACT","FACT","Matemáticas y trigonometría","","functions/fact-function",1],["FACT.DOBLE","FACTDOUBLE","Matemáticas y trigonometría","","functions/factdouble-function",1],["FALSO","FALSE","Lógica","","functions/false-function",1],["FECHA","DATE","Fecha y hora","","functions/date-function",1],["FECHA.MES","EDATE","Fecha y hora","","functions/edate-function",1],["FECHANUMERO","DATEVALUE","Fecha y hora","","functions/datevalue-function",1],["FI","PHI","Estadística","2013","functions/phi-function",1],["FILA","ROW","Búsqueda y referencia","","functions/row-function",1],["FILAS","ROWS","Búsqueda y referencia","","functions/rows-function",1],["FILTRAR","FILTER","Búsqueda y referencia","2021","functions/filter-function",1],["FIN.MES","EOMONTH","Fecha y hora","","functions/eomonth-function",1],["FISHER","FISHER","Estadística","","functions/fisher-function",1],["FONETICO","PHONETIC","Texto","","functions/phonetic-function",1],["FORMULATEXTO","FORMULATEXT","Búsqueda y referencia","2013","functions/formulatext-function",1],["FRAC.AÑO","YEARFRAC","Fecha y hora","","functions/yearfrac-function",1],["FRECUENCIA","FREQUENCY","Estadística","","functions/frequency-function",1],["PRUEBA.F","FTEST","Compatibilidad","","functions/ftest-function",1],["FUN.ERROR","ERF","Ingeniería","","functions/erf-function",1],["FUN.ERROR.COMPL","ERFC","Ingeniería","","functions/erfc-function",1],["FUN.ERROR.COMPL.EXACTO","ERFC.PRECISE","Ingeniería","2010","functions/erfc-precise-function",1],["FUN.ERROR.EXACTO","ERF.PRECISE","Ingeniería","2010","functions/erf-precise-function",1],["GAMMA","GAMMA","Estadística","2013","functions/gamma-function",1],["GAMMA.LN","GAMMALN","Estadística","","functions/gammaln-function",1],["GAMMA.LN.EXACTO","GAMMALN.PRECISE","Estadística","2010","functions/gammaln-precise-function",1],["GAUSS","GAUSS","Estadística","2013","functions/gauss-function",1],["GRADOS","DEGREES","Matemáticas y trigonometría","","functions/degrees-function",1],["GROUPBY","GROUPBY","Búsqueda y referencia","Microsoft 365","functions/groupby-function",1],["HALLAR","SEARCH","Texto","","functions/search-function",1],["HALLARB","SEARCHB","Texto","","functions/search-function",1],["HEX.A.BIN","HEX2BIN","Ingeniería","","functions/hex2bin-function",1],["HEX.A.DEC","HEX2DEC","Ingeniería","","functions/hex2dec-function",1],["HEX.A.OCT","HEX2OCT","Ingeniería","","functions/hex2oct-function",1],["HIPERVINCULO","HYPERLINK","Búsqueda y referencia","","functions/hyperlink-function",1],["HISTORIALCOTIZACIONES","STOCKHISTORY","Información","","functions/stockhistory-function",1],["HORA","HOUR","Fecha y hora","","functions/hour-function",1],["HORANUMERO","TIMEVALUE","Fecha y hora","","functions/timevalue-function",1],["HOY","TODAY","Fecha y hora","","functions/today-function",1],["ID.REGISTRO","REGISTER.ID","Complementos y automatización","","functions/register-id-function",0],["IGUAL","EXACT","Texto","","functions/exact-function",1],["IM.ABS","IMABS","Ingeniería","","functions/imabs-function",1],["IM.ANGULO","IMARGUMENT","Ingeniería","","functions/imargument-function",1],["IM.CONJUGADA","IMCONJUGATE","Ingeniería","","functions/imconjugate-function",1],["IM.COS","IMCOS","Ingeniería","","functions/imcos-function",1],["IM.COSH","IMCOSH","Ingeniería","2013","functions/imcosh-function",1],["IM.COT","IMCOT","Ingeniería","2013","functions/imcot-function",1],["IM.CSC","IMCSC","Ingeniería","2013","functions/imcsc-function",1],["IM.CSCH","IMCSCH","Ingeniería","2013","functions/imcsch-function",1],["IM.DIV","IMDIV","Ingeniería","","functions/imdiv-function",1],["IM.EXP","IMEXP","Ingeniería","","functions/imexp-function",1],["IM.LN","IMLN","Ingeniería","","functions/imln-function",1],["IM.LOG10","IMLOG10","Ingeniería","","functions/imlog10-function",1],["IM.LOG2","IMLOG2","Ingeniería","","functions/imlog2-function",1],["IM.POT","IMPOWER","Ingeniería","","functions/impower-function",1],["IM.PRODUCT","IMPRODUCT","Ingeniería","","functions/improduct-function",1],["IM.RAIZ2","IMSQRT","Ingeniería","","functions/imsqrt-function",1],["IM.REAL","IMREAL","Ingeniería","","functions/imreal-function",1],["IM.SEC","IMSEC","Ingeniería","2013","functions/imsec-function",1],["IM.SECH","IMSECH","Ingeniería","2013","functions/imsech-function",1],["IM.SENO","IMSIN","Ingeniería","","functions/imsin-function",1],["IM.SENOH","IMSINH","Ingeniería","2013","functions/imsinh-function",1],["IM.SUM","IMSUM","Ingeniería","","functions/imsum-function",1],["IM.SUSTR","IMSUB","Ingeniería","","functions/imsub-function",1],["IM.TAN","IMTAN","Ingeniería","2013","functions/imtan-function",1],["IMAGEN","IMAGE","Búsqueda y referencia","2024","functions/image-function",1],["IMAGINARIO","IMAGINARY","Ingeniería","","functions/imaginary-function",1],["IMPORTARDATOSDINAMICOS","GETPIVOTDATA","Búsqueda y referencia","","functions/getpivotdata-function",1],["INDICE","INDEX","Búsqueda y referencia","","functions/index-function",1],["INDIRECTO","INDIRECT","Búsqueda y referencia","","functions/indirect-function",1],["INFO","INFO","Información","","functions/info-function",1],["INT.ACUM","ACCRINT","Finanzas","","functions/accrint-function",1],["INT.ACUM.V","ACCRINTM","Finanzas","","functions/accrintm-function",1],["INT.EFECTIVO","EFFECT","Finanzas","","functions/effect-function",1],["INT.PAGO.DIR","ISPMT","Finanzas","","functions/ispmt-function",1],["INTERSECCION.EJE","INTERCEPT","Estadística","","functions/intercept-function",1],["INTERVALO.CONFIANZA","CONFIDENCE","Compatibilidad","","functions/confidence-function",1],["INTERVALO.CONFIANZA.NORM","CONFIDENCE.NORM","Estadística","2010","functions/confidence-norm-function",1],["INTERVALO.CONFIANZA.T","CONFIDENCE.T","Estadística","2010","functions/confidence-t-function",1],["INV.BETA.N","BETA.INV","Estadística","2010","functions/beta-inv-function",1],["INV.BINOM","BINOM.INV","Estadística","2010","functions/binom-inv-function",1],["INV.CHICUAD","CHISQ.INV","Estadística","2010","functions/chisq-inv-function",1],["INV.CHICUAD.CD","CHISQ.INV.RT","Estadística","2010","functions/chisq-inv-rt-function",1],["INV.F","F.INV","Estadística","2010","functions/f-inv-function",1],["INV.F.CD","F.INV.RT","Estadística","2010","functions/f-inv-rt-function",1],["INV.GAMMA","GAMMA.INV","Estadística","2010","functions/gamma-inv-function",1],["INV.LOGNORM","LOGNORM.INV","Estadística","2010","functions/lognorm-inv-function",1],["INV.NORM","NORM.INV","Compatibilidad","2010","functions/norm-inv-function",1],["INV.NORM.ESTAND","NORM.S.INV","Estadística","2010","functions/norm-s-inv-function",1],["INV.T","T.INV","Estadística","2010","functions/t-inv-function",1],["INV.T.2C","T.INV.2T","Estadística","2010","functions/t-inv-2t-function",1],["ISO.NUM.DE.SEMANA","ISOWEEKNUM","Fecha y hora","2013","functions/isoweeknum-function",1],["ISOMITTED","ISOMITTED","Información","2024","functions/isomitted-function",1],["IZQUIERDA","LEFT","Texto","","functions/left-function",1],["IZQUIERDAB","LEFTB","Texto","","functions/left-function",1],["JERARQUIA","RANK","Compatibilidad","","functions/rank-function",1],["JERARQUIA.EQV","RANK.EQ","Estadística","2010","functions/rank-eq-function",1],["JERARQUIA.MEDIA","RANK.AVG","Estadística","2010","functions/rank-avg-function",1],["JIS","JIS","Texto","","functions/jis-function",1],["K.ESIMO.MAYOR","LARGE","Estadística","","functions/large-function",1],["K.ESIMO.MENOR","SMALL","Estadística","","functions/small-function",1],["LAMBDA","LAMBDA","Lógica","2024","functions/lambda-function",1],["LARGO","LEN","Texto","","functions/len-function",1],["LARGOB","LENB","Texto","","functions/len-function",1],["LET","LET","Lógica","2021","functions/let-function",1],["LETRA.DE.TES.PRECIO","TBILLPRICE","Finanzas","","functions/tbillprice-function",1],["LETRA.DE.TES.RENDTO","TBILLYIELD","Finanzas","","functions/tbillyield-function",1],["LETRA.DE.TEST.EQV.A.BONO","TBILLEQ","Finanzas","","functions/tbilleq-function",1],["LIMPIAR","CLEAN","Texto","","functions/clean-function",1],["LLAMAR","CALL","Complementos y automatización","","functions/call-function",0],["LN","LN","Matemáticas y trigonometría","","functions/ln-function",1],["LOG","LOG","Matemáticas y trigonometría","","functions/log-function",1],["LOG10","LOG10","Matemáticas y trigonometría","","functions/log10-function",1],["M.C.D","GCD","Matemáticas y trigonometría","","functions/gcd-function",1],["M.C.M","LCM","Matemáticas y trigonometría","","functions/lcm-function",1],["M.UNIDAD","MUNIT","Matemáticas y trigonometría","2013","functions/munit-function",1],["MAKEARRAY","MAKEARRAY","Lógica","2024","functions/makearray-function",1],["MAP","MAP","Lógica","2024","functions/map-function",1],["MATRIZALEAT","RANDARRAY","Matemáticas y trigonometría","2021","functions/randarray-function",1],["MATRIZATEXTO","ARRAYTOTEXT","Texto","2021","functions/arraytotext-function",1],["MAX","MAX","Estadística","","functions/max-function",1],["MAX.SI.CONJUNTO","MAXIFS","Estadística","2019","functions/maxifs-function",1],["MAXA","MAXA","Estadística","","functions/maxa-function",1],["MAYOR.O.IGUAL","GESTEP","Ingeniería","","functions/gestep-function",1],["MAYUSC","UPPER","Texto","","functions/upper-function",1],["MDETERM","MDETERM","Matemáticas y trigonometría","","functions/mdeterm-function",1],["MEDIA.ACOTADA","TRIMMEAN","Estadística","","functions/trimmean-function",1],["MEDIA.ARMO","HARMEAN","Estadística","","functions/harmean-function",1],["MEDIA.GEOM","GEOMEAN","Estadística","","functions/geomean-function",1],["MEDIANA","MEDIAN","Estadística","","functions/median-function",1],["MES","MONTH","Fecha y hora","","functions/month-function",1],["MIEMBROCUBO","CUBEMEMBER","Cubo","","functions/cubemember-function",1],["MIEMBROKPICUBO","CUBEKPIMEMBER","Cubo","","functions/cubekpimember-function",1],["MIEMBRORANGOCUBO","CUBERANKEDMEMBER","Cubo","","functions/cuberankedmember-function",1],["MIN","MIN","Estadística","","functions/min-function",1],["MIN.SI.CONJUNTO","MINIFS","Estadística","2019","functions/minifs-function",1],["MINA","MINA","Estadística","","functions/mina-function",1],["MINUSC","LOWER","Texto","","functions/lower-function",1],["MINUTO","MINUTE","Fecha y hora","","functions/minute-function",1],["MINVERSA","MINVERSE","Matemáticas y trigonometría","","functions/minverse-function",1],["MMULT","MMULT","Matemáticas y trigonometría","","functions/mmult-function",1],["MODA","MODE","Compatibilidad","","functions/mode-function",1],["MODA.UNO","MODE.SNGL","Estadística","2010","functions/mode-sngl-function",1],["MODA.VARIOS","MODE.MULT","Estadística","2010","functions/mode-mult-function",1],["MONEDA.DEC","DOLLARDE","Finanzas","","functions/dollarde-function",1],["MONEDA.FRAC","DOLLARFR","Finanzas","","functions/dollarfr-function",1],["MULTINOMIAL","MULTINOMIAL","Matemáticas y trigonometría","","functions/multinomial-function",1],["MULTIPLO.INFERIOR","FLOOR","Compatibilidad","","functions/floor-function",1],["MULTIPLO.INFERIOR.EXACTO","FLOOR.PRECISE","Matemáticas y trigonometría","","functions/floor-precise-function",1],["MULTIPLO.INFERIOR.MAT","FLOOR.MATH","Matemáticas y trigonometría","2013","functions/floor-math-function",1],["MULTIPLO.SUPERIOR","CEILING","Compatibilidad","","functions/ceiling-function",1],["MULTIPLO.SUPERIOR.EXACTO","CEILING.PRECISE","Matemáticas y trigonometría","","functions/ceiling-precise-function",1],["MULTIPLO.SUPERIOR.ISO","ISO.CEILING","Matemáticas y trigonometría","2013","functions/iso-ceiling-function",1],["MULTIPLO.SUPERIOR.MAT","CEILING.MATH","Matemáticas y trigonometría","2013","functions/ceiling-math-function",1],["N","N","Información","","functions/n-function",1],["NEGBINOM.DIST","NEGBINOM.DIST","Estadística","2010","functions/negbinom-dist-function",1],["NEGBINOMDIST","NEGBINOMDIST","Compatibilidad","","functions/negbinomdist-function",1],["NO","NOT","Lógica","","functions/not-function",1],["NOD","NA","Información","","functions/na-function",1],["NOMPROPIO","PROPER","Texto","","functions/proper-function",1],["NPER","NPER","Finanzas","","functions/nper-function",1],["NSHORA","TIME","Fecha y hora","","functions/time-function",1],["NUM.DE.SEMANA","WEEKNUM","Fecha y hora","","functions/weeknum-function",1],["NUMERO.ARABE","ARABIC","Matemáticas y trigonometría","2013","functions/arabic-function",1],["NUMERO.ROMANO","ROMAN","Matemáticas y trigonometría","","functions/roman-function",1],["O","OR","Lógica","","functions/or-function",1],["OCT.A.BIN","OCT2BIN","Ingeniería","","functions/oct2bin-function",1],["OCT.A.DEC","OCT2DEC","Ingeniería","","functions/oct2dec-function",1],["OCT.A.HEX","OCT2HEX","Ingeniería","","functions/oct2hex-function",1],["ORDENAR","SORT","Búsqueda y referencia","2021","functions/sort-function",1],["ORDENARPOR","SORTBY","Búsqueda y referencia","2021","functions/sortby-function",1],["P.DURACION","PDURATION","Finanzas","2013","functions/pduration-function",1],["PAGO","PMT","Finanzas","","functions/pmt-function",1],["PAGO.INT.ENTRE","CUMIPMT","Finanzas","","functions/cumipmt-function",1],["PAGO.PRINC.ENTRE","CUMPRINC","Finanzas","","functions/cumprinc-function",1],["PAGOINT","IPMT","Finanzas","","functions/ipmt-function",1],["PAGOPRIN","PPMT","Finanzas","","functions/ppmt-function",1],["PEARSON","PEARSON","Estadística","","functions/pearson-function",1],["PENDIENTE","SLOPE","Estadística","","functions/slope-function",1],["PERCENTIL","PERCENTILE","Compatibilidad","","functions/percentile-function",1],["PERCENTIL.EXC","PERCENTILE.EXC","Estadística","2010","functions/percentile-exc-function",1],["PERCENTIL.INC","PERCENTILE.INC","Estadística","2010","functions/percentile-inc-function",1],["PERCENTOF","PERCENTOF","Matemáticas y trigonometría","Microsoft 365","functions/percentof-function",1],["PERMUTACIONES","PERMUT","Estadística","","functions/permut-function",1],["PERMUTACIONES.A","PERMUTATIONA","Estadística","2013","functions/permutationa-function",1],["PI","PI","Matemáticas y trigonometría","","functions/pi-function",1],["PIVOTBY","PIVOTBY","Búsqueda y referencia","Microsoft 365","functions/pivotby-function",1],["POISSON","POISSON","Compatibilidad","","functions/poisson-function",1],["POISSON.DIST","POISSON.DIST","Estadística","2010","functions/poisson-dist-function",1],["POTENCIA","POWER","Matemáticas y trigonometría","","functions/power-function",1],["PRECIO","PRICE","Finanzas","","functions/price-function",1],["PRECIO.DESCUENTO","PRICEDISC","Finanzas","","functions/pricedisc-function",1],["PRECIO.PER.IRREGULAR.1","ODDFPRICE","Finanzas","","functions/oddfprice-function",1],["PRECIO.PER.IRREGULAR.2","ODDLPRICE","Finanzas","","functions/oddlprice-function",1],["PRECIO.VENCIMIENTO","PRICEMAT","Finanzas","","functions/pricemat-function",1],["PROBABILIDAD","PROB","Estadística","","functions/prob-function",1],["PRODUCTO","PRODUCT","Matemáticas y trigonometría","","functions/product-function",1],["PROMEDIO","AVERAGE","Estadística","","functions/average-function",1],["PROMEDIO.SI","AVERAGEIF","Estadística","","functions/averageif-function",1],["PROMEDIO.SI.CONJUNTO","AVERAGEIFS","Estadística","","functions/averageifs-function",1],["PROMEDIOA","AVERAGEA","Estadística","","functions/averagea-function",1],["PRONOSTICO","FORECAST","Estadística","","forecast-and-forecast-linear-functions",1],["PRONOSTICO.ETS","FORECAST.ETS","Estadística","2016","forecasting-functions-reference#_forecast.ets",1],["PRONOSTICO.ETS.CONFINT","FORECAST.ETS.CONFINT","Estadística","2016","forecasting-functions-reference#_forecast.ets.confint",1],["PRONOSTICO.ETS.ESTACIONALIDAD","FORECAST.ETS.SEASONALITY","Estadística","2016","forecasting-functions-reference#_forecast.ets.seasonality",1],["PRONOSTICO.ETS.ESTADISTICA","FORECAST.ETS.STAT","Estadística","2016","forecasting-functions-reference#_forecast.ets.stat",1],["PRONOSTICO.LINEAL","FORECAST.LINEAR","Estadística","2016","forecasting-functions-reference#_forecast.linear",1],["PROPIEDADMIEMBROCUBO","CUBEMEMBERPROPERTY","Cubo","","functions/cubememberproperty-function",1],["PRUEBA.CHI","CHITEST","Compatibilidad","","functions/chitest-function",1],["PRUEBA.CHI.INV","CHIINV","Compatibilidad","","functions/chiinv-function",1],["PRUEBA.CHICUAD","CHISQ.TEST","Estadística","2010","functions/chisq-test-function",1],["PRUEBA.F.N","F.TEST","Estadística","2010","functions/f-test-function",1],["PRUEBA.FISHER.INV","FISHERINV","Estadística","","functions/fisherinv-function",1],["PRUEBA.T","TTEST","Compatibilidad","","functions/ttest-function",1],["PRUEBA.T.N","T.TEST","Estadística","2010","functions/t-test-function",1],["PRUEBA.Z","ZTEST","Compatibilidad","","functions/ztest-function",1],["PRUEBA.Z.N","Z.TEST","Estadística","2010","functions/z-test-function",1],["RADIANES","RADIANS","Matemáticas y trigonometría","","functions/radians-function",1],["RAIZ","SQRT","Matemáticas y trigonometría","","functions/sqrt-function",1],["RAIZ2PI","SQRTPI","Matemáticas y trigonometría","","functions/sqrtpi-function",1],["RANGO.PERCENTIL","PERCENTRANK","Compatibilidad","","functions/percentrank-function",1],["RANGO.PERCENTIL.EXC","PERCENTRANK.EXC","Estadística","2010","functions/percentrank-exc-function",1],["RANGO.PERCENTIL.INC","PERCENTRANK.INC","Estadística","2010","functions/percentrank-inc-function",1],["RDTR","RTD","Búsqueda y referencia","","functions/rtd-function",1],["RECUENTOCONJUNTOCUBO","CUBESETCOUNT","Cubo","","functions/cubesetcount-function",1],["REDOND.MULT","MROUND","Matemáticas y trigonometría","","functions/mround-function",1],["REDONDEA.IMPAR","ODD","Matemáticas y trigonometría","","functions/odd-function",1],["REDONDEA.PAR","EVEN","Matemáticas y trigonometría","","functions/even-function",1],["REDONDEAR","ROUND","Matemáticas y trigonometría","","functions/round-function",1],["REDONDEAR.MAS","ROUNDUP","Matemáticas y trigonometría","","functions/roundup-function",1],["REDONDEAR.MENOS","ROUNDDOWN","Matemáticas y trigonometría","","functions/rounddown-function",1],["REDUCE","REDUCE","Lógica","2024","functions/reduce-function",1],["REEMPLAZAR","REPLACE","Texto","","functions/replace-function",1],["REEMPLAZARB","REPLACEB","Texto","","functions/replace-function",1],["REGEXEXTRACT","REGEXEXTRACT","Texto","Microsoft 365","functions/regexextract-function",1],["REGEXREPLACE","REGEXREPLACE","Texto","Microsoft 365","functions/regexreplace-function",1],["REGEXTEST","REGEXTEST","Texto","Microsoft 365","functions/regextest-function",1],["RENDTO","YIELD","Finanzas","","functions/yield-function",1],["RENDTO.DESC","YIELDDISC","Finanzas","","functions/yielddisc-function",1],["RENDTO.PER.IRREGULAR.1","ODDFYIELD","Finanzas","","functions/oddfyield-function",1],["RENDTO.PER.IRREGULAR.2","ODDLYIELD","Finanzas","","functions/oddlyield-function",1],["RENDTO.VENCTO","YIELDMAT","Finanzas","","functions/yieldmat-function",1],["REPETIR","REPT","Texto","","functions/rept-function",1],["RESIDUO","MOD","Matemáticas y trigonometría","","functions/mod-function",1],["RRI","RRI","Finanzas","2013","functions/rri-function",1],["SCAN","SCAN","Lógica","2024","functions/scan-function",1],["SEC","SEC","Matemáticas y trigonometría","2013","functions/sec-function",1],["SECH","SECH","Matemáticas y trigonometría","2013","functions/sech-function",1],["SECUENCIA","SEQUENCE","Matemáticas y trigonometría","2021","functions/sequence-function",1],["SEGUNDO","SECOND","Fecha y hora","","functions/second-function",1],["SENO","SIN","Matemáticas y trigonometría","","functions/sin-function",1],["SENOH","SINH","Matemáticas y trigonometría","","functions/sinh-function",1],["SERVICIOWEB","WEBSERVICE","Web","2013","functions/webservice-function",1],["HOJA","SHEET","Información","2013","functions/sheet-function",1],["HOJAS","SHEETS","Información","2013","functions/sheets-function",1],["SI","IF","Lógica","","functions/if-function",1],["SI.CONJUNTO","IFS","Lógica","2019","functions/ifs-function",1],["SI.ERROR","IFERROR","Lógica","","functions/iferror-function",1],["SI.ND","IFNA","Lógica","2013","functions/ifna-function",1],["SIFECHA","DATEDIF","Fecha y hora","","functions/datedif-function",1],["SIGNO","SIGN","Matemáticas y trigonometría","","functions/sign-function",1],["SLN","SLN","Finanzas","","functions/sln-function",1],["NORMALIZACION","STANDARDIZE","Estadística","","functions/standardize-function",1],["SUBTOTALES","SUBTOTAL","Matemáticas y trigonometría","","functions/subtotal-function",1],["SUMA","SUM","Matemáticas y trigonometría","","functions/sum-function",1],["SUMA.CUADRADOS","SUMSQ","Matemáticas y trigonometría","","functions/sumsq-function",1],["SUMA.SERIES","SERIESSUM","Matemáticas y trigonometría","","functions/seriessum-function",1],["SUMAPRODUCTO","SUMPRODUCT","Matemáticas y trigonometría","","functions/sumproduct-function",1],["SUMAR.SI","SUMIF","Matemáticas y trigonometría","","functions/sumif-function",1],["SUMAR.SI.CONJUNTO","SUMIFS","Matemáticas y trigonometría","","functions/sumifs-function",1],["SUMAX2MASY2","SUMX2PY2","Matemáticas y trigonometría","","functions/sumx2py2-function",1],["SUMAX2MENOSY2","SUMX2MY2","Matemáticas y trigonometría","","functions/sumx2my2-function",1],["SUMAXMENOSY2","SUMXMY2","Matemáticas y trigonometría","","functions/sumxmy2-function",1],["SUSTITUIR","SUBSTITUTE","Texto","","functions/substitute-function",1],["SYD","SYD","Finanzas","","functions/syd-function",1],["T","T","Texto","","functions/t-function",1],["TAN","TAN","Matemáticas y trigonometría","","functions/tan-function",1],["TANH","TANH","Matemáticas y trigonometría","","functions/tanh-function",1],["TASA","RATE","Finanzas","","functions/rate-function",1],["TASA.DESC","DISC","Finanzas","","functions/disc-function",1],["TASA.INT","INTRATE","Finanzas","","functions/intrate-function",1],["TASA.NOMINAL","NOMINAL","Finanzas","","functions/nominal-function",1],["TENDENCIA","TREND","Estadística","","functions/trend-function",1],["TEXTO","TEXT","Texto","","functions/text-function",1],["TEXTOANTES","TEXTBEFORE","Texto","2024","functions/textbefore-function",1],["TEXTOBAHT","BAHTTEXT","Texto","","functions/bahttext-function",1],["TEXTODESPUES","TEXTAFTER","Texto","2024","functions/textafter-function",1],["TIPO","TYPE","Información","","functions/type-function",1],["TIPO.DE.ERROR","ERROR.TYPE","Información","","functions/error-type-function",1],["TIR","IRR","Finanzas","","functions/irr-function",1],["TIR.NO.PER","XIRR","Finanzas","","functions/xirr-function",1],["TIRM","MIRR","Finanzas","","functions/mirr-function",1],["TOMAR","TAKE","Búsqueda y referencia","2024","functions/take-function",1],["TRADUCIR","TRANSLATE","Texto","Microsoft 365","functions/translate-function",1],["TRANSPONER","TRANSPOSE","Búsqueda y referencia","","functions/transpose-function",1],["TRIMRANGE","TRIMRANGE","Búsqueda y referencia","Microsoft 365","functions/trimrange-function",1],["TRUNCAR","TRUNC","Matemáticas y trigonometría","","functions/trunc-function",1],["UNICAR","UNICHAR","Texto","2013","functions/unichar-function",1],["UNICODE","UNICODE","Texto","2013","functions/unicode-function",1],["UNICOS","UNIQUE","Búsqueda y referencia","2021","functions/unique-function",1],["UNIRCADENAS","TEXTJOIN","Texto","2019","functions/textjoin-function",1],["VA","PV","Finanzas","","functions/pv-function",1],["VALOR","VALUE","Texto","","functions/value-function",1],["VALOR.NUMERO","NUMBERVALUE","Texto","2013","functions/numbervalue-function",1],["VALORATEXTO","VALUETOTEXT","Texto","2021","functions/valuetotext-function",1],["VALORCUBO","CUBEVALUE","Cubo","","functions/cubevalue-function",1],["VAR","VAR","Compatibilidad","","functions/var-function",1],["VAR.P","VAR.P","Estadística","2010","functions/var-p-function",1],["VAR.S","VAR.S","Estadística","2010","functions/var-s-function",1],["VARA","VARA","Estadística","","functions/vara-function",1],["VARP","VARP","Compatibilidad","","functions/varp-function",1],["VARPA","VARPA","Estadística","","functions/varpa-function",1],["VERDADERO","TRUE","Lógica","","functions/true-function",1],["VF","FV","Finanzas","","functions/fv-function",1],["VF.PLAN","FVSCHEDULE","Finanzas","","functions/fvschedule-function",1],["VNA","NPV","Finanzas","","functions/npv-function",1],["VNA.NO.PER","XNPV","Finanzas","","functions/xnpv-function",1],["XMLFILTRO","FILTERXML","Web","2013","functions/filterxml-function",1],["XO","XOR","Lógica","2013","functions/xor-function",1],["Y","AND","Lógica","","functions/and-function",1]];
-    const functionEquivalences = functionEquivalenceRows.map(function (row, index) {
-      const category = row[2] === 'Buscar y hacer referencia' ? 'Búsqueda y referencia' : row[2];
-      const version = row[0] === 'COPILOT' ? 'Microsoft 365 · beta' : row[0] === 'TRIMRANGE' ? 'Microsoft 365 · nombre según canal' : (row[3] || 'Clásicas');
-      const path = row[0] === 'ENCONTRAR' || row[0] === 'ENCONTRARB' ? 'how-to-correct-a-value-error-in-find-findb-and-search-searchb-functions' : row[4];
-      return { id: 'fn-' + index, es: row[0], en: row[1], category: category, version: version, path: path, verified: Boolean(row[5]) };
-    });
-    const productivityBank = shortcutBank.concat(hackTips);
 
     const seedQuizBank = [
       { m: 'm1', q: '¿Cuál es la relación correcta dentro de Excel?', o: ['Celda → Libro → Hoja', 'Libro → Hojas → Celdas', 'Hoja → Cinta → Libro', 'Fila → Libro → Celda'], a: 1, e: 'Un libro es el archivo principal; contiene hojas, y cada hoja contiene celdas.' },
@@ -2223,32 +2078,6 @@
 
     const challengeBank = buildChallengeBank();
 
-    const aliases = {
-      'vlookup': 'buscarv',
-      'xlookup': 'buscarx',
-      'lookup': 'buscar buscarv buscarx',
-      'desarrollador': 'programador macro vba',
-      'programador': 'macro vba desarrollador',
-      'iva': 'referencia absoluta f4 impuesto',
-      'impuesto': 'iva referencia absoluta',
-      'promedio': 'promedio media',
-      'tabla pivot': 'tabla dinámica',
-      'pivot': 'tabla dinámica',
-      'power query': 'obtener datos consulta',
-      'lista desplegable': 'validación datos',
-      'coautoría': 'onedrive colaboración',
-      'macros': 'macro vba programador',
-      'formulas': 'fórmulas función',
-      'relleno rapido': 'flash fill ctrl e separar texto',
-      'pegar valores': 'pegado especial ctrl alt v',
-      'fijar celda': 'referencia absoluta f4 anclar',
-      'anclar celda': 'referencia absoluta f4 fijar',
-      'cambiar hoja': 'page down page up pestaña',
-      'seleccionar visibles': 'alt punto y coma filtro',
-      'if': 'si función lógica',
-      'sum': 'suma función matemáticas'
-    };
-
     const courseMap = document.getElementById('courseMap');
     const moduleTabs = document.getElementById('moduleTabs');
     const moduleOverview = document.getElementById('moduleOverview');
@@ -2257,32 +2086,12 @@
     const lessonAnnouncement = document.getElementById('lessonAnnouncement');
     const weekList = document.getElementById('weekList');
     const lessonView = document.getElementById('lessonView');
-    const globalSearch = document.getElementById('globalSearch');
-    const searchResults = document.getElementById('searchResults');
     const referenceCategories = document.getElementById('referenceCategories');
     const referenceGrid = document.getElementById('referenceGrid');
     const referenceDetail = document.getElementById('referenceDetail');
     const referenceSearch = document.getElementById('referenceSearch');
     const referenceStatus = document.getElementById('referenceStatus');
     const referenceMore = document.getElementById('referenceMore');
-    const hacksTabs = document.getElementById('hacksTabs');
-    const hacksPanels = Array.from(document.querySelectorAll('[data-hack-panel]'));
-    const dailyHack = document.getElementById('dailyHack');
-    const shortcutSearch = document.getElementById('shortcutSearch');
-    const shortcutCategory = document.getElementById('shortcutCategory');
-    const shortcutPlatformControl = document.getElementById('shortcutPlatform');
-    const shortcutStatus = document.getElementById('shortcutStatus');
-    const hackGrid = document.getElementById('hackGrid');
-    const hackDetail = document.getElementById('hackDetail');
-    const randomHack = document.getElementById('randomHack');
-    const moreHacks = document.getElementById('moreHacks');
-    const functionSearch = document.getElementById('functionSearch');
-    const functionCategory = document.getElementById('functionCategory');
-    const functionVersion = document.getElementById('functionVersion');
-    const functionStatus = document.getElementById('functionStatus');
-    const functionList = document.getElementById('functionList');
-    const clearFunctionSearch = document.getElementById('clearFunctionSearch');
-    const moreFunctions = document.getElementById('moreFunctions');
     const quizFilters = document.getElementById('quizFilters');
     const quizBody = document.getElementById('quizBody');
     const quizDifficultySelect = document.getElementById('quizDifficulty');
@@ -2313,17 +2122,6 @@
     let activeReferenceId = null;
     let referenceQuery = '';
     let referenceVisibleCount = 8;
-    let activeHacksTab = 'shortcuts';
-    let shortcutQuery = '';
-    let activeShortcutCategory = 'Todos';
-    let shortcutVisibleCount = 8;
-    let shortcutPlatform = 'windows';
-    let activeHackId = null;
-    let dailyHackOffset = 0;
-    let functionQuery = '';
-    let activeFunctionCategory = 'Todas';
-    let activeFunctionVersion = 'Todas';
-    let functionVisibleCount = 20;
     let quizFilter = 'all';
     let quizState = null;
     let missionState = null;
@@ -2378,9 +2176,6 @@
 
     let motionPaused = loadValue('excel-en-ruta-motion-paused', false);
     if (typeof motionPaused !== 'boolean') motionPaused = false;
-    shortcutPlatform = loadValue('excel-en-ruta-shortcut-platform', 'windows');
-    if (shortcutPlatform !== 'windows' && shortcutPlatform !== 'mac') shortcutPlatform = 'windows';
-
     function escapeHtml(value) {
       return String(value).replace(/[&<>"']/g, function (character) {
         return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character];
@@ -2389,10 +2184,6 @@
 
     function normalize(value) {
       return String(value || '').toLocaleLowerCase('es').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    }
-
-    function normalizeLookup(value) {
-      return normalize(value).replace(/[._-]+/g, ' ').replace(/\s+/g, ' ').trim();
     }
 
     const moduleThemes = {
@@ -2610,278 +2401,6 @@
         document.getElementById('biblioteca').scrollIntoView({ behavior: scrollBehavior(), block: 'start' });
         setTimeout(function () { referenceDetail.focus({ preventScroll: true }); }, prefersLessMotion() ? 0 : 250);
       }
-    }
-
-    const hackThemes = {
-      'Navegación': { accent: '#0e7490', soft: '#ecfeff' },
-      'Edición': { accent: '#1d4ed8', soft: '#eff6ff' },
-      'Fórmulas': { accent: '#6d28d9', soft: '#f5f3ff' },
-      'Datos': { accent: '#08783f', soft: '#eaf8f0' },
-      'Formato': { accent: '#be123c', soft: '#fff1f2' },
-      'Automatización': { accent: '#b45309', soft: '#fff7ed' },
-      'Trucos': { accent: '#0f766e', soft: '#f0fdfa' }
-    };
-
-    function activateHacksTab(tabId, focusTab) {
-      activeHacksTab = tabId;
-      Array.from(hacksTabs.querySelectorAll('[data-hack-tab]')).forEach(function (tab) {
-        const active = tab.dataset.hackTab === tabId;
-        tab.classList.toggle('is-active', active);
-        tab.setAttribute('aria-selected', active);
-        tab.tabIndex = active ? 0 : -1;
-        if (active && focusTab) tab.focus();
-      });
-      hacksPanels.forEach(function (panel) {
-        const active = panel.dataset.hackPanel === tabId;
-        panel.classList.toggle('is-active', active);
-        panel.hidden = !active;
-      });
-    }
-
-    function hackKeys(hack) {
-      if (hack.isTip) return '';
-      return shortcutPlatform === 'mac' ? hack.mac : hack.win;
-    }
-
-    function renderKeyChord(value) {
-      if (!value) return '<span class="key-unavailable">Sin atajo predeterminado documentado</span>';
-      return '<span class="key-chord" aria-label="' + escapeHtml(value) + '">' + String(value).split(' / ').map(function (alternative, alternativeIndex) {
-        const keys = alternative.split(/\s+\+\s+/).map(function (key) { return '<kbd>' + escapeHtml(key) + '</kbd>'; }).join('<b aria-hidden="true">+</b>');
-        return (alternativeIndex ? '<b aria-hidden="true">o</b>' : '') + keys;
-      }).join('') + '</span>';
-    }
-
-    function getFilteredHacks() {
-      const query = normalizeLookup(shortcutQuery);
-      return productivityBank.filter(function (hack) {
-        const categoryMatch = activeShortcutCategory === 'Todos' || hack.category === activeShortcutCategory;
-        const text = normalizeLookup([hack.action, hack.summary, hack.detail, hack.tip, hack.caution, hack.win, hack.mac, hack.tags.join(' ')].join(' '));
-        return categoryMatch && (!query || text.indexOf(query) !== -1);
-      });
-    }
-
-    function renderHacks() {
-      const filtered = getFilteredHacks();
-      const visible = filtered.slice(0, shortcutVisibleCount);
-      hackGrid.innerHTML = visible.map(function (hack) {
-        const theme = hackThemes[hack.category] || hackThemes.Trucos;
-        const type = hack.isTip ? 'Truco práctico' : hack.category;
-        const expanded = hack.id === activeHackId;
-        return '<button class="hack-card' + (expanded ? ' is-active' : '') + '" style="--hack-accent:' + theme.accent + ';--hack-soft:' + theme.soft + '" type="button" data-hack-id="' + escapeHtml(hack.id) + '" aria-controls="hackDetail" aria-expanded="' + expanded + '"><small>' + escapeHtml(type) + ' · ' + escapeHtml(hack.level) + '</small><strong>' + escapeHtml(hack.action) + '</strong><p>' + escapeHtml(hack.summary) + '</p>' + (hack.isTip ? '<span class="key-unavailable">Abrir pasos</span>' : renderKeyChord(hackKeys(hack))) + '</button>';
-      }).join('');
-      if (!visible.length) hackGrid.innerHTML = '<div class="no-search">No hay hacks con esos filtros. Prueba otra palabra o categoría.</div>';
-      shortcutStatus.textContent = visible.length + ' de ' + filtered.length + ' hacks · ' + (shortcutPlatform === 'mac' ? 'macOS' : 'Windows');
-      moreHacks.hidden = visible.length >= filtered.length;
-      if (activeHackId && !filtered.some(function (hack) { return hack.id === activeHackId; })) {
-        activeHackId = null;
-        hackDetail.classList.remove('is-visible');
-        hackDetail.innerHTML = '';
-      }
-      const dailyButton = dailyHack.querySelector('[data-open-daily]');
-      if (dailyButton) dailyButton.setAttribute('aria-expanded', String(dailyButton.dataset.openDaily === activeHackId));
-    }
-
-    function openHack(hackId, options) {
-      const hack = productivityBank.find(function (item) { return item.id === hackId; });
-      if (!hack) return;
-      activateHacksTab('shortcuts', false);
-      activeHackId = hack.id;
-      renderHacks();
-      hackDetail.innerHTML = '<div class="hack-detail-head"><div><small>' + escapeHtml(hack.isTip ? 'Truco práctico' : hack.category + ' · ' + hack.level) + '</small><h4>' + escapeHtml(hack.action) + '</h4></div>' + (hack.isTip ? '' : renderKeyChord(hackKeys(hack))) + '</div><p>' + escapeHtml(hack.detail) + '</p><div class="hack-detail-grid"><div><strong>Cómo aprovecharlo</strong>' + escapeHtml(hack.tip) + '</div><div><strong>Ten en cuenta</strong>' + escapeHtml(hack.caution) + '</div></div>';
-      hackDetail.classList.add('is-visible');
-      if (options && options.reveal) {
-        hackDetail.scrollIntoView({ behavior: scrollBehavior(), block: 'center' });
-        setTimeout(function () { hackDetail.focus({ preventScroll: true }); }, prefersLessMotion() ? 0 : 220);
-      }
-      if (options && options.scroll) {
-        hackDetail.scrollIntoView({ behavior: scrollBehavior(), block: 'center' });
-        setTimeout(function () { hackDetail.focus({ preventScroll: true }); }, prefersLessMotion() ? 0 : 240);
-      }
-    }
-
-    function renderDailyHack() {
-      const today = new Date();
-      const daySeed = Math.floor(new Date(today.getFullYear(), today.getMonth(), today.getDate()).getTime() / 86400000);
-      const hack = productivityBank[(daySeed + dailyHackOffset) % productivityBank.length];
-      dailyHack.innerHTML = '<span class="daily-icon" aria-hidden="true">✦</span><div><small>Hack del día</small><strong>' + escapeHtml(hack.action) + '</strong><p>' + escapeHtml(hack.summary) + '</p></div><button class="secondary-button" type="button" data-open-daily="' + escapeHtml(hack.id) + '" aria-controls="hackDetail" aria-expanded="' + (hack.id === activeHackId) + '">Ver hack</button>';
-    }
-
-    function populateHacksControls() {
-      const hackCategories = ['Todos'].concat(Array.from(new Set(productivityBank.map(function (hack) { return hack.category; }))));
-      shortcutCategory.innerHTML = hackCategories.map(function (category) { return '<option value="' + escapeHtml(category) + '">' + escapeHtml(category) + '</option>'; }).join('');
-      shortcutCategory.value = activeShortcutCategory;
-
-      const functionCategories = ['Todas'].concat(Array.from(new Set(functionEquivalences.map(function (item) { return item.category; }))).sort(function (a, b) { return a.localeCompare(b, 'es'); }));
-      functionCategory.innerHTML = functionCategories.map(function (category) { return '<option value="' + escapeHtml(category) + '">' + escapeHtml(category) + '</option>'; }).join('');
-      const versions = Array.from(new Set(functionEquivalences.map(function (item) { return item.version; })));
-      versions.sort(function (a, b) {
-        if (a === 'Microsoft 365') return -1;
-        if (b === 'Microsoft 365') return 1;
-        if (a === 'Clásicas') return 1;
-        if (b === 'Clásicas') return -1;
-        return Number(b) - Number(a);
-      });
-      functionVersion.innerHTML = ['Todas'].concat(versions).map(function (version) { return '<option value="' + escapeHtml(version) + '">' + escapeHtml(version) + '</option>'; }).join('');
-      document.getElementById('functionCount').textContent = functionEquivalences.length;
-      document.getElementById('functionCategoryCount').textContent = new Set(functionEquivalences.map(function (item) { return item.category; })).size;
-      shortcutPlatformControl.querySelectorAll('[data-platform]').forEach(function (button) {
-        const active = button.dataset.platform === shortcutPlatform;
-        button.classList.toggle('is-active', active);
-        button.setAttribute('aria-pressed', active);
-      });
-    }
-
-    function functionMatchScore(item, rawQuery) {
-      const raw = normalize(rawQuery).trim();
-      const loose = normalizeLookup(rawQuery);
-      if (!raw && !loose) return 1;
-      const esRaw = normalize(item.es);
-      const enRaw = normalize(item.en);
-      const esLoose = normalizeLookup(item.es);
-      const enLoose = normalizeLookup(item.en);
-      if (raw === esRaw || raw === enRaw || loose === esLoose || loose === enLoose) return 4;
-      if (esRaw.indexOf(raw) === 0 || enRaw.indexOf(raw) === 0 || esLoose.indexOf(loose) === 0 || enLoose.indexOf(loose) === 0) return 3;
-      if (esRaw.indexOf(raw) !== -1 || enRaw.indexOf(raw) !== -1 || esLoose.indexOf(loose) !== -1 || enLoose.indexOf(loose) !== -1) return 2;
-      return 0;
-    }
-
-    function getFilteredFunctions() {
-      return functionEquivalences.map(function (item) { return { item: item, score: functionMatchScore(item, functionQuery) }; }).filter(function (match) {
-        const item = match.item;
-        const categoryMatch = activeFunctionCategory === 'Todas' || item.category === activeFunctionCategory;
-        const versionMatch = activeFunctionVersion === 'Todas' || item.version === activeFunctionVersion;
-        return match.score && categoryMatch && versionMatch;
-      }).sort(function (a, b) {
-        return b.score - a.score || a.item.es.localeCompare(b.item.es, 'es');
-      }).map(function (match) { return match.item; });
-    }
-
-    function renderFunctions() {
-      const filtered = getFilteredFunctions();
-      const visible = filtered.slice(0, functionVisibleCount);
-      functionList.innerHTML = visible.map(function (item) {
-        const documentationUrl = item.path.indexOf('topic/') === 0 ? 'https://support.microsoft.com/es-es/' + item.path : 'https://support.microsoft.com/es-es/excel/' + item.path;
-        return '<div class="function-row" role="listitem" data-function-id="' + escapeHtml(item.id) + '" tabindex="-1"><div class="function-name"><small>Español</small><code>' + escapeHtml(item.es) + '</code></div><span class="function-arrow" aria-hidden="true">↔</span><div class="function-name english"><small>English</small><code>' + escapeHtml(item.en) + '</code></div><div class="function-tags"><span>' + escapeHtml(item.category) + '</span><span>' + escapeHtml(item.version) + '</span>' + (item.verified ? '' : '<span title="Entrada de compatibilidad tomada del índice oficial">Índice</span>') + '</div><div class="function-links"><button class="icon-button" type="button" data-copy-function="' + escapeHtml(item.es) + '" aria-label="Copiar ' + escapeHtml(item.es) + '">ES</button><button class="icon-button" type="button" data-copy-function="' + escapeHtml(item.en) + '" aria-label="Copiar ' + escapeHtml(item.en) + '">EN</button><a class="icon-button" href="' + documentationUrl + '" target="_blank" rel="noreferrer" aria-label="Abrir documentación oficial de ' + escapeHtml(item.es) + '">↗</a></div></div>';
-      }).join('');
-      if (!visible.length) functionList.innerHTML = '<div class="no-search">No encontramos esa función. Prueba el nombre en el otro idioma o elimina los filtros.</div>';
-      functionStatus.textContent = visible.length + ' de ' + filtered.length + ' equivalencias';
-      moreFunctions.hidden = visible.length >= filtered.length;
-    }
-
-    function showFunction(functionId, options) {
-      const item = functionEquivalences.find(function (candidate) { return candidate.id === functionId; });
-      if (!item) return;
-      activateHacksTab('functions', false);
-      functionQuery = item.es;
-      activeFunctionCategory = 'Todas';
-      activeFunctionVersion = 'Todas';
-      functionVisibleCount = 20;
-      functionSearch.value = item.es;
-      functionCategory.value = 'Todas';
-      functionVersion.value = 'Todas';
-      renderFunctions();
-      const row = functionList.querySelector('[data-function-id="' + item.id + '"]');
-      if (options && options.scroll) {
-        document.getElementById('hacks').scrollIntoView({ behavior: scrollBehavior(), block: 'start' });
-        setTimeout(function () { if (row) row.focus({ preventScroll: true }); }, prefersLessMotion() ? 0 : 240);
-      }
-    }
-
-    function copyText(value) {
-      if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(value);
-      const helper = document.createElement('textarea');
-      helper.value = value;
-      helper.setAttribute('readonly', '');
-      helper.style.position = 'fixed';
-      helper.style.opacity = '0';
-      document.body.appendChild(helper);
-      helper.select();
-      const copied = document.execCommand('copy');
-      helper.remove();
-      return copied ? Promise.resolve() : Promise.reject(new Error('No se pudo copiar'));
-    }
-
-    function getSearchTerms(rawQuery) {
-      const normalized = normalize(rawQuery).trim();
-      if (!normalized) return [];
-      const expanded = aliases[normalized] ? normalized + ' ' + aliases[normalized] : normalized;
-      return expanded.split(/\s+/).filter(Boolean);
-    }
-
-    function scoreMatch(text, terms) {
-      const normalizedText = normalize(text);
-      let score = 0;
-      terms.forEach(function (term) {
-        if (normalizedText.indexOf(term) !== -1) score += 1;
-      });
-      return score;
-    }
-
-    function buildSearchResults(query) {
-      const terms = getSearchTerms(query);
-      if (!terms.length) return [];
-      const results = [];
-      allWeeks().forEach(function (item) {
-        const week = item.week;
-        const text = item.module.title + ' ' + item.module.description + ' ' + week.title + ' ' + week.summary + ' ' + week.logic + ' ' + week.example + ' ' + week.practice + ' ' + week.practiceSteps.join(' ') + ' ' + week.tags.join(' ');
-        const score = scoreMatch(text, terms);
-        if (score >= Math.min(1, terms.length)) {
-          results.push({ type: 'lesson', score: score, title: 'Semana ' + week.number + ' · ' + week.title, context: week.summary, moduleIndex: item.moduleIndex, weekIndex: item.weekIndex });
-        }
-      });
-      references.forEach(function (reference) {
-        const text = reference.name + ' ' + reference.summary + ' ' + reference.detail + ' ' + reference.code + ' ' + reference.tags.join(' ');
-        const score = scoreMatch(text, terms);
-        if (score >= Math.min(1, terms.length)) {
-          results.push({ type: 'reference', score: score + 1, title: reference.name, context: reference.summary, referenceId: reference.id });
-        }
-      });
-      productivityBank.forEach(function (hack) {
-        const text = hack.action + ' ' + hack.summary + ' ' + hack.detail + ' ' + hack.tip + ' ' + hack.win + ' ' + hack.mac + ' ' + hack.tags.join(' ');
-        const score = scoreMatch(text, terms);
-        if (score >= Math.min(1, terms.length)) {
-          results.push({ type: 'hack', score: score + 1, title: hack.action, context: hack.summary, hackId: hack.id });
-        }
-      });
-      functionEquivalences.map(function (item) {
-        return { item: item, score: functionMatchScore(item, query) };
-      }).filter(function (match) { return match.score > 0; }).sort(function (a, b) {
-        return b.score - a.score || a.item.es.localeCompare(b.item.es, 'es');
-      }).slice(0, 3).forEach(function (match) {
-        results.push({ type: 'function', score: match.score + 3, title: match.item.es + ' ↔ ' + match.item.en, context: match.item.category + ' · ' + match.item.version, functionId: match.item.id });
-      });
-      return results.sort(function (a, b) { return b.score - a.score; }).slice(0, 9);
-    }
-
-    function renderSearchResults() {
-      const query = globalSearch.value;
-      const results = buildSearchResults(query);
-      if (!query.trim()) {
-        searchResults.classList.remove('is-visible');
-        searchResults.innerHTML = '';
-        globalSearch.setAttribute('aria-expanded', 'false');
-        return;
-      }
-      searchResults.classList.add('is-visible');
-      globalSearch.setAttribute('aria-expanded', 'true');
-      if (!results.length) {
-        searchResults.innerHTML = '<div class="no-search">No hay coincidencias directas. Prueba con una palabra más corta, por ejemplo: <strong>filtro</strong>, <strong>SI</strong>, <strong>IVA</strong> o <strong>macro</strong>.</div>';
-        return;
-      }
-      searchResults.innerHTML = '<div class="result-heading">Resultados para “' + escapeHtml(query) + '”</div>' + results.map(function (result, index) {
-        let typeClass = '';
-        let action = 'data-result-module="' + result.moduleIndex + '" data-result-week="' + result.weekIndex + '"';
-        let label = 'Lección';
-        if (result.type === 'reference') { typeClass = ' ref'; action = 'data-result-ref="' + escapeHtml(result.referenceId) + '"'; label = 'Guía'; }
-        if (result.type === 'hack') { typeClass = ' hack'; action = 'data-result-hack="' + escapeHtml(result.hackId) + '"'; label = 'Hack'; }
-        if (result.type === 'function') { typeClass = ' function'; action = 'data-result-function="' + escapeHtml(result.functionId) + '"'; label = 'Función'; }
-        return '<button class="search-result" type="button" role="option" ' + action + ' data-result-index="' + index + '"><span class="result-type' + typeClass + '">' + label + '</span><span><strong>' + escapeHtml(result.title) + '</strong><span>' + escapeHtml(result.context) + '</span></span></button>';
-      }).join('');
-    }
-
-    function closeSearch() {
-      searchResults.classList.remove('is-visible');
-      globalSearch.setAttribute('aria-expanded', 'false');
     }
 
     function shuffle(list) {
@@ -3297,65 +2816,6 @@
       });
     }, true);
 
-    globalSearch.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape') {
-        closeSearch();
-        globalSearch.blur();
-      }
-      if (event.key === 'Enter') {
-        const first = searchResults.querySelector('.search-result');
-        if (first) first.click();
-      }
-      if (event.key === 'ArrowDown') {
-        const first = searchResults.querySelector('.search-result');
-        if (first) { event.preventDefault(); first.focus(); }
-      }
-    });
-    searchResults.addEventListener('keydown', function (event) {
-      const results = Array.from(searchResults.querySelectorAll('.search-result'));
-      const current = results.indexOf(document.activeElement);
-      if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
-        event.preventDefault();
-        const next = event.key === 'ArrowDown' ? Math.min(results.length - 1, current + 1) : Math.max(0, current - 1);
-        if (results[next]) results[next].focus();
-      }
-      if (event.key === 'Escape') { closeSearch(); globalSearch.focus(); }
-    });
-    searchResults.addEventListener('click', function (event) {
-      const lessonResult = event.target.closest('[data-result-module]');
-      const referenceResult = event.target.closest('[data-result-ref]');
-      const hackResult = event.target.closest('[data-result-hack]');
-      const functionResult = event.target.closest('[data-result-function]');
-      if (lessonResult) {
-        selectLesson(Number(lessonResult.dataset.resultModule), Number(lessonResult.dataset.resultWeek), { scroll: true, focus: true });
-        globalSearch.value = '';
-        closeSearch();
-      }
-      if (referenceResult) {
-        openReference(referenceResult.dataset.resultRef, { scroll: true });
-        globalSearch.value = '';
-        closeSearch();
-      }
-      if (hackResult) {
-        shortcutQuery = '';
-        activeShortcutCategory = 'Todos';
-        shortcutVisibleCount = 8;
-        shortcutSearch.value = '';
-        shortcutCategory.value = 'Todos';
-        openHack(hackResult.dataset.resultHack, { scroll: true });
-        globalSearch.value = '';
-        closeSearch();
-      }
-      if (functionResult) {
-        showFunction(functionResult.dataset.resultFunction, { scroll: true });
-        globalSearch.value = '';
-        closeSearch();
-      }
-    });
-    document.addEventListener('click', function (event) {
-      if (!event.target.closest('.search-shell')) closeSearch();
-    });
-
     referenceCategories.addEventListener('click', function (event) {
       const button = event.target.closest('[data-category]');
       if (!button) return;
@@ -3381,111 +2841,6 @@
       if (!button) return;
       const found = findWeek(Number(button.dataset.goWeek));
       if (found) selectLesson(found.moduleIndex, found.weekIndex, { scroll: true, focus: true });
-    });
-
-    hacksTabs.addEventListener('click', function (event) {
-      const tab = event.target.closest('[data-hack-tab]');
-      if (tab) activateHacksTab(tab.dataset.hackTab, false);
-    });
-    hacksTabs.addEventListener('keydown', function (event) {
-      const tabs = Array.from(hacksTabs.querySelectorAll('[data-hack-tab]'));
-      const current = tabs.indexOf(event.target.closest('[data-hack-tab]'));
-      if (current === -1 || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
-      event.preventDefault();
-      let next = current;
-      if (event.key === 'ArrowLeft') next = (current - 1 + tabs.length) % tabs.length;
-      if (event.key === 'ArrowRight') next = (current + 1) % tabs.length;
-      if (event.key === 'Home') next = 0;
-      if (event.key === 'End') next = tabs.length - 1;
-      activateHacksTab(tabs[next].dataset.hackTab, true);
-    });
-    dailyHack.addEventListener('click', function (event) {
-      const button = event.target.closest('[data-open-daily]');
-      if (!button) return;
-      shortcutQuery = '';
-      activeShortcutCategory = 'Todos';
-      shortcutVisibleCount = 8;
-      shortcutSearch.value = '';
-      shortcutCategory.value = 'Todos';
-      openHack(button.dataset.openDaily, { reveal: true });
-    });
-    shortcutSearch.addEventListener('input', function () {
-      shortcutQuery = shortcutSearch.value.trim();
-      shortcutVisibleCount = 8;
-      renderHacks();
-    });
-    shortcutCategory.addEventListener('change', function () {
-      activeShortcutCategory = shortcutCategory.value;
-      shortcutVisibleCount = 8;
-      renderHacks();
-    });
-    shortcutPlatformControl.addEventListener('click', function (event) {
-      const button = event.target.closest('[data-platform]');
-      if (!button) return;
-      shortcutPlatform = button.dataset.platform;
-      saveValue('excel-en-ruta-shortcut-platform', shortcutPlatform);
-      shortcutPlatformControl.querySelectorAll('[data-platform]').forEach(function (candidate) {
-        const active = candidate.dataset.platform === shortcutPlatform;
-        candidate.classList.toggle('is-active', active);
-        candidate.setAttribute('aria-pressed', active);
-      });
-      if (activeHackId) openHack(activeHackId, { scroll: false }); else renderHacks();
-    });
-    moreHacks.addEventListener('click', function () {
-      shortcutVisibleCount += 8;
-      renderHacks();
-    });
-    randomHack.addEventListener('click', function () {
-      const candidates = getFilteredHacks();
-      if (!candidates.length) return;
-      const alternatives = candidates.filter(function (hack) { return hack.id !== activeHackId; });
-      const pool = alternatives.length ? alternatives : candidates;
-      openHack(pool[Math.floor(Math.random() * pool.length)].id, { reveal: true });
-    });
-    hackGrid.addEventListener('click', function (event) {
-      const button = event.target.closest('[data-hack-id]');
-      if (button) openHack(button.dataset.hackId, { reveal: true });
-    });
-
-    functionSearch.addEventListener('input', function () {
-      functionQuery = functionSearch.value.trim();
-      functionVisibleCount = 20;
-      renderFunctions();
-    });
-    functionCategory.addEventListener('change', function () {
-      activeFunctionCategory = functionCategory.value;
-      functionVisibleCount = 20;
-      renderFunctions();
-    });
-    functionVersion.addEventListener('change', function () {
-      activeFunctionVersion = functionVersion.value;
-      functionVisibleCount = 20;
-      renderFunctions();
-    });
-    clearFunctionSearch.addEventListener('click', function () {
-      functionQuery = '';
-      activeFunctionCategory = 'Todas';
-      activeFunctionVersion = 'Todas';
-      functionVisibleCount = 20;
-      functionSearch.value = '';
-      functionCategory.value = 'Todas';
-      functionVersion.value = 'Todas';
-      renderFunctions();
-      functionSearch.focus();
-    });
-    moreFunctions.addEventListener('click', function () {
-      functionVisibleCount += 20;
-      renderFunctions();
-    });
-    functionList.addEventListener('click', function (event) {
-      const button = event.target.closest('[data-copy-function]');
-      if (!button) return;
-      const value = button.dataset.copyFunction;
-      copyText(value).then(function () {
-        functionStatus.textContent = '“' + value + '” se copió al portapapeles.';
-      }).catch(function () {
-        functionStatus.textContent = 'No se pudo copiar automáticamente; selecciona el nombre manualmente.';
-      });
     });
 
     quizFilters.addEventListener('click', function (event) {
@@ -3592,10 +2947,6 @@
     document.addEventListener('keydown', function (event) {
       const tag = event.target && event.target.tagName;
       const typing = tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || event.target.isContentEditable;
-      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
-        event.preventDefault();
-        globalSearch.focus();
-      }
       if (typing) return;
       if (document.getElementById('learningShell').dataset.lessonMode === 'json') return;
       if (event.altKey && event.key === 'ArrowLeft') {
@@ -3618,11 +2969,6 @@
     renderLesson();
     renderReferences();
     emptyReference();
-    populateHacksControls();
-    renderDailyHack();
-    renderHacks();
-    renderFunctions();
-    activateHacksTab(activeHacksTab, false);
     renderQuizFilters();
     renderQuiz();
     renderMission();

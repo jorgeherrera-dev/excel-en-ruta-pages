@@ -1,0 +1,14 @@
+﻿VentaID,Fecha,Region,Vendedor,Producto,Categoria,Unidades,Precio,Estado,Cliente
+V001,2026-08-01, norte , Ana Torres ,Laptop,Cómputo,2,14500,Entregado,C001|Comercial Alfa|Morelia
+V002,2026-08-02,CENTRO,Luis Pérez,Mouse ,Accesorios,8,240,entregado,C002|Servicios Beta|Querétaro
+V003,2026-08-03,sur, María Núñez,Audífonos,Audio,5,650,PENDIENTE,C003|Grupo Gamma|Uruapan
+V004,2026-08-04,centro ,Jorge Díaz ,Monitor,Cómputo,2,3200,Entregado,C004|Distribuidora Delta|Morelia
+V005,2026-08-05,NORTE,Sofía Chávez,Teclado,Accesorios,10,480,Cancelado,C005|Tienda Épsilon|Zamora
+V006,2026-08-06,sur ,Irene López,Bocina,Audio,4,1200,entregado,C006|Comercial Zeta|Pátzcuaro
+V007,2026-08-07, CENTRO,Ana Torres,Webcam,Accesorios,6,900,Pendiente,C007|Soluciones Eta|Morelia
+V008,2026-08-08,norte,Luis Pérez,Laptop,Cómputo,1,14500,ENTREGADO,C008|Red Theta|Quiroga
+V009,2026-08-09,SUR,María Núñez,Mouse,Accesorios,12,240,Entregado,C009|Comercial Iota|Morelia
+V010,2026-08-10,centro,Jorge Díaz,Audífonos,Audio,7,650,Entregado,C010|Servicios Kappa|Querétaro
+V010,2026-08-10,centro,Jorge Díaz,Audífonos,Audio,7,650,Entregado,C010|Servicios Kappa|Querétaro
+V011,2026-08-11,norte ,Sofía Chávez,Bocina ,Audio,5,1200,Pendiente,C011|Grupo Lambda|Uruapan
+V012,2026-08-12,sur,Irene López,Monitor,Cómputo,2,3200,Entregado,C012|Distribuidora Mu|Morelia

@@ -1,0 +1,9 @@
+﻿VentaID,Fecha,Region,Producto,Unidades,Precio
+V001,2026-07-01, norte ,teclado ,3,450
+V002,2026-07-02,CENTRO,Mouse,5,220
+V003,2026-07-03,sur, Monitor,2,3200
+V004,2026-07-04, centro ,Laptop,1,14500
+V005,2026-07-05,NORTE,Base enfriadora ,2,680
+V006,2026-07-06,sur ,Audífonos,4,590
+V006,2026-07-06,sur ,Audífonos,4,590
+V007,2026-07-07, centro,Webcam ,3,850

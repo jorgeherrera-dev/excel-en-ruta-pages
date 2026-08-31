@@ -1,0 +1,6 @@
+PedidoID|Cliente|Ciudad|Producto|Unidades
+P-001|Ana Torres|Morelia|Teclado|2
+P-002|José Ramírez|Querétaro|Mouse|5
+P-003|María Núñez|Pátzcuaro|Monitor|1
+P-004|Luis Gómez|Uruapan|Laptop|1
+P-005|Sofía Chávez|Zamora|Base enfriadora|2

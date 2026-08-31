@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "avanzado-a09-a09-l10",
+  "mode": "formative",
+  "items": [
+    {
+      "id": "q-01",
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q-02",
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q-03",
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q-04",
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q-05",
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q-06",
+      "correctOptionIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "q-07",
+      "correctOptionIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "q-08",
+      "correctOptionIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "q-09",
+      "correctOptionIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "q-10",
+      "correctOptionIds": [
+        "A"
+      ]
+    }
+  ]
+}
