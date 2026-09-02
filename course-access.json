@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "enabled": false,
+  "enabled": true,
   "unlockedModules": {
-    "inicial": 0,
-    "basico": 0,
+    "inicial": 8,
+    "basico": 1,
     "intermedio": 0,
     "avanzado": 0
   }
