@@ -215,6 +215,7 @@
     .result-type.error { color: #a33b20; background: #ffebe5; }
     .result-type.function-intent { max-width: 92px; color: #175b83; background: #e7f4fb; }
     .result-type.glossary { color: #6b4a13; background: #fff3d8; }
+    .result-type.compatibility { max-width: 92px; color: #51428d; background: #f0eefb; }
     .search-result strong { display: block; color: #1c432d; font-size: .87rem; }
     .search-result span:last-child { display: block; margin-top: 2px; color: var(--muted); font-size: .76rem; line-height: 1.35; }
     .no-search { padding: 14px; color: var(--muted); font-size: .87rem; }
@@ -1221,8 +1222,8 @@
       .hero-card { transform: none !important; }
     }
   </style>
-  <script type="module" crossorigin src="./assets/index-A9ihFXJT.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CTlA7NfE.css">
+  <script type="module" crossorigin src="./assets/index-SMgwP31k.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DIYfwHVL.css">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -1235,6 +1236,7 @@
       <nav class="main-nav" aria-label="Navegación principal">
         <a href="#temario">Ruta completa</a>
         <a href="#recursos">Recursos rápidos</a>
+        <a href="#practicas">Generador de Prácticas</a>
       </nav>
       <div class="top-actions">
         <div class="top-progress" role="progressbar" aria-label="Progreso del curso legacy" aria-valuemin="0" aria-valuemax="24" aria-valuenow="0" id="topProgress" hidden aria-hidden="true"><span id="topProgressText">0/24</span><span class="mini-progress" aria-hidden="true"><i id="topProgressFill"></i></span></div>
@@ -1312,6 +1314,10 @@
         </div>
         <div class="course-map" id="courseMap" aria-label="Módulos del curso"></div>
       </div>
+    </section>
+
+    <section class="section" id="practicas" hidden>
+      <div class="page-width" id="practiceApp"></div>
     </section>
 
     <section class="section" id="recursos">
