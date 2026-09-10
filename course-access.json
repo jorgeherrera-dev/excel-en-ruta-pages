@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "enabled": true,
+  "enabled": false,
   "unlockedModules": {
     "inicial": 8,
     "basico": 0,
