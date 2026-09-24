@@ -1,17 +1,10 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 1,
   "enabled": true,
   "unlockedModules": {
-    "inicial": 6,
+    "inicial": 7,
     "basico": 0,
     "intermedio": 0,
     "avanzado": 0
-  },
-  "partialModules": {
-    "inicial": {
-      "m07": {
-        "unlockedLessons": 3
-      }
-    }
   }
 }
